@@ -141,16 +141,16 @@ a {
 }
 
 #secim {
-    box-shadow: 0 0 100px rgba(212, 59, 59, 0.5);
+    box-shadow: 0 0 100px rgba(50, 50, 50, 0.5);
     background-size: cover;
     background-image:
-    linear-gradient(to top, rgba(212, 59, 59, 0.7), rgba(212, 59, 59, 0.4)),
+    linear-gradient(to top, rgba(50, 50, 50, 1), rgba(50, 50, 50, 0.9)),
     url(img/secim.png);
 }
 
 #secim:hover {
     transform: scale(1.1);
-    border: 2px solid rgb(212, 59, 59);
+    border: 2px solid rgb(50, 50, 50);
 }
 
 #bingo {
