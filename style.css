@@ -7,6 +7,19 @@ body {
 p {
     color: #fff;
     text-align: center;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.4rem;
 }
 
 a {
@@ -16,7 +29,7 @@ a {
 
 .container {
     color: #e5e5e5;
-    font-size: 2.26rem;
+    font-size: 2.26rem !important;
     font-weight: 900;
     height: 30vh;
     display: flex;
@@ -122,7 +135,7 @@ a {
 
 .project {
     width: 500px;
-    height: 300px;
+    aspect-ratio: 5/3;
     margin: 1rem;
     background-color: #343333;
     border-radius: 10px;
@@ -137,7 +150,7 @@ a {
 
 .project-banner {
     position: absolute;
-    width: 476px;
+    width: calc(100% - 26px);
     top: 0;
     left: 0;
     padding: 8px;
@@ -316,3 +329,11 @@ a {
   }
   
 /*#endregion*/
+
+
+@media only screen and (max-width: 768px)
+{
+    .project {
+        width: calc(100% - 80px);
+    }
+}
