@@ -12,9 +12,15 @@
     <main class="container">
         <div>👋 Hi! I'm</div>
         <section class="animation">
-          <div class="first"><div>densdev</div></div>
-          <div class="second"><div>Web Developer</div></div>
-          <div class="third"><div>Game Developer</div></div>
+            <div class="first">
+                <div>densdev</div>
+            </div>
+            <div class="second">
+                <div>Web Developer</div>
+            </div>
+            <div class="third">
+                <div>Game Developer</div>
+            </div>
         </section>
         <!--<button class="academic-button" onclick="window.location.href='/edu'">
             Acedemic Portfolio
@@ -35,7 +41,7 @@
                 <h1>L'eau, c'est la vie !</h1>
                 <p>Water, it's life.</p>
             </div>
-            
+
         </a>
     </div>
     <br><br>
@@ -68,34 +74,38 @@
         </a>
     </div>
     <br><br>
-    <div id="redirect-banner">
-        You are at the right place. "denizhonigs.com" redirects to this page. | ver. 23.8.2a
-    </div>
 </body>
 
 <script>
     // Function to check if the user was redirected from denizhonigs.com
     function isRedirected() {
-      const urlParams = new URLSearchParams(window.location.search);
-      return urlParams.has('redirected') && urlParams.get('redirected') === 'true';
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.has('redirected') && urlParams.get('redirected') === 'true';
     }
+
+    // Function to close the banner
+    function closeBanner() {
+        const banner = document.getElementById('redirect-banner');
+        banner.style.display = 'none';
+    }
+
     // Function to add the banner if redirected from denizhonigs.com
     function addRedirectBanner() {
-      if (isRedirected()) {
-        const banner = document.createElement('div');
-        banner.id = 'redirect-banner';
-        banner.innerHTML = `You are at the right place. "denizhonigs.com" redirects to this page.`;
-        document.body.insertBefore(banner, document.body.firstChild);
-  
-        // Set timeout to hide the banner after 4 seconds
-        setTimeout(() => {
-          closeBanner();
-        }, 4000);
-      }
+        if (isRedirected()) {
+            const banner = document.createElement('div');
+            banner.id = 'redirect-banner';
+            banner.innerHTML = `You are at the right place. "denizhonigs.com" redirects to this page.`;
+            document.body.insertBefore(banner, document.body.firstChild);
+
+            // Set timeout to hide the banner after 4 seconds
+            setTimeout(() => {
+                closeBanner();
+            }, 4000);
+        }
     }
-  
+
     // Call the function to add the banner
     addRedirectBanner();
-  </script>
-  
+</script>
+
 </html>
