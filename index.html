@@ -9,6 +9,10 @@
 </head>
 
 <body>
+    <div id="redirect-banner">
+        You are at the right place. "denizhonigs.com" redirects to this page.
+    </div>
+
     <main class="container">
         <p>👋 Hi! I'm</p>
         <section class="animation">
@@ -71,4 +75,29 @@
       
 </body>
 
+<script>
+    // Function to check if the user was redirected from denizhonigs.com
+    function isRedirected() {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.has('redirected') && urlParams.get('redirected') === 'true';
+    }
+    // Function to add the banner if redirected from denizhonigs.com
+    function addRedirectBanner() {
+      if (isRedirected()) {
+        const banner = document.createElement('div');
+        banner.id = 'redirect-banner';
+        banner.innerHTML = `You are at the right place. "denizhonigs.com" redirects to this page.`;
+        document.body.insertBefore(banner, document.body.firstChild);
+  
+        // Set timeout to hide the banner after 4 seconds
+        setTimeout(() => {
+          closeBanner();
+        }, 4000);
+      }
+    }
+  
+    // Call the function to add the banner
+    addRedirectBanner();
+  </script>
+  
 </html>
