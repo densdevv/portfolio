@@ -31,7 +31,7 @@ a {
     color: #e5e5e5;
     font-size: 2.26rem !important;
     font-weight: 900;
-    height: 30vh;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -232,6 +232,20 @@ a {
     border: 2px solid rgb(212, 59, 59);
 }
 
+#dropout {
+    box-shadow: 0 0 100px rgba(140, 82, 255, 0.5);
+    border: 2px solid #131417;
+    background-size: cover;
+    background-image:
+        linear-gradient(to top, rgba(140, 82, 255, 0.6), rgba(140, 82, 255, 0.3)),
+        url(img/dropout.png);
+}
+
+#dropout:hover {
+    transform: scale(1.1);
+    border: 2px solid rgb(254, 189, 89);
+}
+
 .containerr {
     display: flex;
     align-items: center;
@@ -249,7 +263,6 @@ a {
 .title {
     color: #fff;
     margin: 0 10px;
-    font-size: 24px;
 }
 
 /*#region Button*/
@@ -342,7 +355,7 @@ a {
     }
     
     h1 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     
     h2 {
@@ -351,5 +364,11 @@ a {
     
     h3 {
         font-size: 2rem;
+    }
+
+    .hello {
+        font-size: 1.8rem;
+        width: 80%;
+        margin-left: 10%;
     }
 }
