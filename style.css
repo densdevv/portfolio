@@ -300,6 +300,7 @@ a {
 
 .game-project h3 {
     background-color: var(--purple);
+    font-weight: 600;
     color: white;
 }
 
@@ -317,6 +318,7 @@ a {
 
 .web-project h3 {
     background-color: var(--green);
+    font-weight: 600;
     color: white;
 }
 
@@ -420,10 +422,6 @@ a {
 /*#region Page Load Animation*/
 .drop-in {
     animation: drop-in 1s ease 200ms backwards;
-}
-
-.drop-in-2 {
-    animation: drop-in 1200ms ease 500ms backwards;
 }
 
 @keyframes drop-in {
