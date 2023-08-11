@@ -4,106 +4,150 @@
 <head>
     <meta charset="UTF-8">
     <title>densdev</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700,900" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8c71c4d8b8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/img/favicon-black.png" type="image/x-icon">
+    <link rel="icon" href="/img/favicon-white.png" type="image/x-icon" media="(prefers-color-scheme: dark)">
+    <script src="./main.js"></script>
 </head>
 
 <body>
-    <main class="container">
-        <div>👋 Hi! I'm</div>
-        <section class="animation">
-            <div class="first">
-                <div>densdev</div>
+    <div id="navbar" class="navbar">
+        <div id="navbar-content">
+            <h1 id="name">👋 Hi, I'm <span>&nbsp;densdev&nbsp;</span></h1>
+            <div id="navbar-center">
+                <a class="hover-underline" href="#home">/hello</a>
+                <a class="hover-underline" href="#games">/games</a>
+                <a class="hover-underline" href="#web">/web</a>
             </div>
-            <div class="second">
-                <div>Web Developer</div>
+            <div id="navbar-right">
+                <p class="socials">
+                    <a href="https://www.linkedin.com/in/deniz-h%C3%B6nigs-213261273/" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/dens_dev" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="/cv" target="_blank">CV</a>
+                </p>
             </div>
-            <div class="third">
-                <div>Game Developer</div>
+        </div>
+    </div>
+    <div id="home"></div>
+    <div style="width: 100%; min-height: 200px;" id="hello-anchor"></div>
+    <div id="hello">
+        <div class="section-title" id="hello-title">hello</div>
+        <div id="hello-paragraph">
+            <h3>Hello, it's me</h3>
+            <h1>Deniz Hönigs</h1>
+            <p>I'm a self-taught <a href="#games" class="hover-underline">game developer</a> and <a href="#web"
+                    class="hover-underline">web designer</a> from Türkiye, studying 11th grade in <a
+                    href="https://sj.k12.tr" target="_blank" class="hover-underline">Lycée Saint Joseph d'Istanbul</a>.
+                <br>
+                — <br>
+                I'm also the co-founder of <a href="https://dropoutcode.com" target="_blank"
+                    class="hover-underline">Dropout Code</a>, where we are creating awesome indie games! <br>
+                I am additionally working on an educational platform to be used by schools, aiming it to be released
+                early next year. <br>
+                — <br>
+                To learn more about me, you can <a href="/cv" target="_blank" class="hover-underline">visit my
+                    <b>CV</b></a> or take a look at my social media profiles: <br>
+                <a href="https://www.linkedin.com/in/deniz-h%C3%B6nigs-213261273/" target="_blank"
+                    class="hover-underline"><i
+                        class="fa-brands fa-linkedin-in"></i>&nbsp;&nbsp;Linkedin</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://twitter.com/dens_dev" target="_blank" class="hover-underline"><i
+                        class="fa-brands fa-twitter"></i>&nbsp;&nbsp;Twitter</a><br>
+            </p>
+
+        </div>
+
+    </div>
+    <div style="width: 100%; min-height: 100px;" id="games"></div>
+    <div class="section-title" id="games-title">games</div>
+    <div style="width: 100%; min-height: 300px;" id="games-anchor"></div>
+
+    <div class="projects-container" >
+        <a class="project game-project" id="hamburger" href="https://play.google.com/store/apps/details?id=com.NonexistentLlama.HamburgerMaker" target="_blank">
+            <h3 class="project-banner"><i class="fa-brands fa-google-play"></i>&nbsp;&nbsp;Google Play • Dropout Code</h3>
+            <div class="project-info">
+                <h1>Hamburger Maker</h1>
+                <p>The ultimate fast food cooking experience. <br>
+                    Use the best ingredients to make delicious hamburgers!</p>
             </div>
-        </section>
-
-    </main>
-    <p class="hello">I'm a self-taught game developer and web designer from Türkiye, studying 11th grade in Lycée Saint
-        Joseph Istanbul.</p>
-    <br>
-    <p>
-        <a href="https://www.linkedin.com/in/deniz-h%C3%B6nigs-213261273/" target="_blank"><i class="fa-brands fa-linkedin-in fa-2xl"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://twitter.com/dens_dev" target="_blank"><i class="fa-brands fa-twitter fa-2xl"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://www.instagram.com/denizhonigs" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a> 
-
-        <button class="academic-button"
-            onclick="window.location.href='/cv'">
-            <p style="line-height: 0;"><i class="fa-regular fa-file fa-2xl"></i>&nbsp;&nbsp;CV</p>
-        </button>
-    </p>
-    <br><br>
-
-    <div class="containerr">
-        <div class="line"></div>
-        <h1 class="title">Professional Project</h1>
-        <div class="line"></div>
+        </a>
+        <a class="project game-project" id="ghost" href="https://play.google.com/store/apps/details?id=com.NonexistentLlama.GhostHuntNinja" target="_blank">
+            <h3 class="project-banner"><i class="fa-brands fa-google-play"></i>&nbsp;&nbsp;Google Play • Dropout Code</h3>
+            <div class="project-info">
+                <h1>Ghost Hunt: Ninja</h1>
+                <p>The ghosts await you... <br>
+                    Will you be able to defeat all ghosts in the house?</p>
+            </div>
+        </a>
+        <a class="project game-project disabled" id="unannounced">
+            <h3 class="project-banner"><i class="fa-regular fa-clock"></i>&nbsp;&nbsp;In Production • Dropout Code</h3>
+            <div class="project-info">
+                <h1>Unannounced PC Title</h1>
+                <p>More info to come, but nothing to tell you yet...</p>
+            </div>
+        </a>
+        <a class="project game-project disabled" id="interlaced">
+            <h3 class="project-banner"><i class="fa-regular fa-circle-check"></i>&nbsp;&nbsp;Development Complete • Dropout Code</h3>
+            <div class="project-info">
+                <h1>Interlaced</h1>
+                <p>A geometry-based casual game where you controll two balls to progress through levels.</p>
+            </div>
+        </a>
     </div>
 
+
+    <div style="width: 100%; min-height: 200px;" id="web"></div>
+    <div class="section-title" id="web-title">web</div>
+    <div style="width: 100%; min-height: 300px;" id="web-anchor"></div>
+
     <div class="projects-container">
-        <a class="project" id="dropout" href="https://dropoutcode.com" target="_blank">
-            <h3 class="project-banner" style="background-color: rgb(254, 189, 89);">UPDATED!</h3>
+        <a class="project web-project" id="dropout" href="https://dropoutcode.com" target="_blank">
+            <h3 class="project-banner"><i class="fa-solid fa-user-tie"></i>&nbsp;&nbsp;Professional Project</h3>
             <div class="project-info">
                 <h1>dropoutcode.com</h1>
                 <p>This is the website for our indie games studio!</p>
             </div>
-
         </a>
-    </div>
-    <br><br>
-
-    <div class="containerr">
-        <div class="line"></div>
-        <h1 class="title">School Project</h1>
-        <div class="line"></div>
-    </div>
-
-    <div class="projects-container">
-        <a class="project" id="eau" href="https://eau.dens.dev" target="_blank">
+        <a class="project web-project" id="dens" id="bingo" href="/" target="_blank">
+            <h3 class="project-banner"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Portfolio</h3>
+            <div class="project-info">
+                <h1>dens.dev</h1>
+                <p>Yes, I also made this website itself! <br> (denizhonigs.com works too!)</p>
+            </div>
+        </a>
+        <a class="project web-project" id="eau" href="https://eau.dens.dev" target="_blank">
+            <h3 class="project-banner"><i class="fa-solid fa-school-flag"></i>&nbsp;&nbsp;School Project</h3>
             <div class="project-info">
                 <h1>L'eau, c'est la vie !</h1>
-                <p>This is my 10<sup>th</sup> grade annual chemistry project <br> about the importance of water.</p>
+                <p>This is my 10<sup>th</sup> grade annual chemistry project <br> about the importance of water. 🌊</p>
             </div>
-
         </a>
-    </div>
-    <br><br>
-
-    <div class="containerr">
-        <div class="line"></div>
-        <h1 class="title">Fun Projects</h1>
-        <div class="line"></div>
-    </div>
-    <div class="projects-container">
-        <a class="project" id="casus" href="https://casus.dens.dev" target="_blank">
-            <h3 class="project-banner" style="background-color: yellow;">NEW GAME!</h3>
+        <a class="project web-project" id="casus" href="https://casus.dens.dev" target="_blank">
+            <h3 class="project-banner"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;Web Game</h3>
             <div class="project-info">
                 <h1>Casus Kim?</h1>
-                <p>A web-based "Who is the Spy?" game (TR)</p>
+                <p>A web-based "Who is the Spy?" game made in under an hour!</p>
             </div>
         </a>
-        <a class="project disabled" id="secim" id="bingo" href="/" target="_blank">
-            <h3 class="project-banner" style="background-color: rgb(53, 53, 53); color: white;">COMING SOON</h3>
-            <div class="project-info">
-                <h1>Countdown</h1>
-                <p>A countdown website for various things...</p>
-            </div>
-        </a>
-        <a class="project disabled" id="bingo" href="/" target="_blank">
-            <h3 class="project-banner" style="background-color: rgb(53, 53, 53); color: white;">UNDER MAINTENANCE</h3>
+        <a class="project web-project disabled" id="bingo" href="/" target="_blank">
+            <h3 class="project-banner"><i class="fa-solid fa-screwdriver-wrench"></i>&nbsp;&nbsp;Under Maintenance</h3>
             <div class="project-info">
                 <h1>Bingo</h1>
                 <p>This project is being updated at the moment. <br>You can still access it if you know the link 😉</p>
             </div>
         </a>
+        <a class="project web-project disabled" id="secim" href="/" target="_blank">
+            <h3 class="project-banner"><i class="fa-solid fa-screwdriver-wrench"></i>&nbsp;&nbsp;Coming Soon</h3>
+            <div class="project-info">
+                <h1>Project: Countdown</h1>
+                <p>A countdown website for various things... 🤔</p>
+            </div>
+        </a>
     </div>
-    <br><br>
+    <div style="min-height: 80px;"></div>
+    <p>Portfolio v2.0 • ©2023 densdev</p>
 </body>
 
 <script>
