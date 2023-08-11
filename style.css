@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    font-family: 'Roboto';
+    font-family: 'Poppins';
     background-color: #131417;
     overflow-x: hidden;
     margin: 0;
@@ -44,6 +44,7 @@ a {
 }
 
 .section-title {
+    font-family: 'Roboto';
     z-index: -99;
     font-size: 20rem;
     opacity: 0.2;
@@ -128,7 +129,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    min-width: 300px;
+    min-width: 350px;
 }
 
 #navbar .socials {
@@ -152,11 +153,11 @@ a {
 /*#endregion Navbar*/
 
 #name {
-    font-weight: 900;
+    font-weight: 600;
     color: #fff;
     text-align: left;
     margin-left: 30px;
-    min-width: 300px;
+    min-width: 350px;
     transition: 1s ease-out;
     font-size: 1.8rem !important;
 }
@@ -178,7 +179,7 @@ a {
 #hello-paragraph h1 {
     font-size: 5rem;
     color: var(--orange);
-    font-weight: 900;
+    font-weight: 700;
     line-height: 0.3;
 }
 
