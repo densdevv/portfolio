@@ -324,7 +324,7 @@ a {
 
 #dropout {
     background-image:
-        linear-gradient(to top, rgba(254, 189, 89, 0.6), rgba(254, 189, 89, 0.3)),
+        linear-gradient(to top, rgba(142, 37, 212, 1), rgba(142, 37, 212, 0.5)),
         url(img/dropout.png);
 }
 
@@ -344,45 +344,51 @@ a {
 
 #secim {
     background-image:
-        linear-gradient(to top, rgba(255, 196, 0, 1), rgba(255, 196, 0, 0.5)),
+        linear-gradient(to top, rgba(176, 136, 4, 1), rgba(176, 136, 4, 0.5)),
         url(img/secim.png);
 }
 
 
 #bingo {
     background-image:
-        linear-gradient(to top, rgba(59, 212, 95, 0.6), rgba(59, 212, 95, 0.5)),
+        linear-gradient(to top, rgba(59, 74, 212, 1), rgba(59, 74, 212, 0.5)),
         url(img/bingo.png);
 }
 
 #hamburger {
     background-image:
-        linear-gradient(to top, rgba(50, 201, 225, 0.6), rgba(50, 201, 225, 0.5)),
+        linear-gradient(to top, rgba(50, 201, 225, 1), rgba(50, 201, 225, 0.5)),
         url(img/hamburger.png);
 }
 
 #ghost {
     background-image:
-        linear-gradient(to top, rgba(77, 82, 184, 0.6), rgba(77, 82, 184, 0.5)),
+        linear-gradient(to top, rgba(77, 82, 184, 1), rgba(77, 82, 184, 0.5)),
         url(img/ghost.png);
 }
 
 #interlaced {
     background-position: center;
     background-image:
-        linear-gradient(to top, rgba(77, 82, 184, 0.6), rgba(77, 82, 184, 0.5)),
+        linear-gradient(to top, rgba(77, 82, 184, 1), rgba(77, 82, 184, 0.5)),
         url(img/interlaced.png);
 }
 
 #unannounced {
     background-image:
-        linear-gradient(to top, rgba(212, 59, 59, 0.6), rgba(212, 59, 59, 0.5)),
+        linear-gradient(to top, rgba(212, 59, 59, 1), rgba(212, 59, 59, 0.5)),
         url(img/unannounced.png);
+}
+
+#plaka {
+    background-image:
+        linear-gradient(to top, rgba(211, 116, 0, 1), rgba(211, 116, 0, 0.5)),
+        url(img/plaka.png);
 }
 
 #casus {
     background-image:
-        linear-gradient(to top, rgba(212, 59, 59, 0.6), rgba(212, 59, 59, 0.5)),
+        linear-gradient(to top, rgba(212, 59, 59, 1), rgba(212, 59, 59, 0.5)),
         url(img/casus.png);
 }
 
