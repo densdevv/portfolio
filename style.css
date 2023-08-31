@@ -241,6 +241,7 @@ a {
 .disabled {
     pointer-events: none;
     opacity: 0.5;
+    filter: grayscale(100%);
 }
 
 .project {
@@ -288,14 +289,14 @@ a {
 
 .game-project {
     border: 2px solid #2E2E2E;
-    box-shadow: 0 0 30px var(--purple);
+    box-shadow: 0 0 10px var(--purple);
     background-size: cover;
 }
 
 .game-project:hover {
     transform: scale(1.1);
     border: 2px solid var(--purple);
-    box-shadow: 0 0 60px var(--purple);
+    box-shadow: 0 0 30px var(--purple);
 }
 
 .game-project h3 {
@@ -306,14 +307,14 @@ a {
 
 .web-project {
     border: 2px solid #2E2E2E;
-    box-shadow: 0 0 30px var(--green);
+    box-shadow: 0 0 10px var(--green);
     background-size: cover;
 }
 
 .web-project:hover {
     transform: scale(1.1);
     border: 2px solid var(--green);
-    box-shadow: 0 0 60px var(--green);
+    box-shadow: 0 0 30px var(--green);
 }
 
 .web-project h3 {
@@ -324,71 +325,77 @@ a {
 
 #dropout {
     background-image:
-        linear-gradient(to top, rgba(142, 37, 212, 1), rgba(142, 37, 212, 0.5)),
+        linear-gradient(to top, rgba(142, 37, 212, 1), rgba(142, 37, 212, 0.2)),
         url(img/dropout.png);
 }
 
 #eau {
     background-image:
-        linear-gradient(to top, rgba(65, 157, 227, 1), rgba(65, 157, 227, 0.5)),
+        linear-gradient(to top, rgba(65, 157, 227, 1), rgba(65, 157, 227, 0.2)),
         url(img/eau.png);
 }
 
 #dens {
     background-position: center;
     background-image:
-        linear-gradient(to top, rgba(70, 180, 30, 1), rgba(70, 180, 30, 0.5)),
+        linear-gradient(to top, rgba(70, 180, 30, 1), rgba(70, 180, 30, 0.2)),
         url(img/dens.png);
 }
 
 
 #secim {
     background-image:
-        linear-gradient(to top, rgba(176, 136, 4, 1), rgba(176, 136, 4, 0.5)),
+        linear-gradient(to top, rgba(176, 136, 4, 1), rgba(176, 136, 4, 0.2)),
         url(img/secim.png);
 }
 
 
 #bingo {
     background-image:
-        linear-gradient(to top, rgba(59, 74, 212, 1), rgba(59, 74, 212, 0.5)),
+        linear-gradient(to top, rgba(59, 74, 212, 1), rgba(59, 74, 212, 0.2)),
         url(img/bingo.png);
 }
 
 #hamburger {
     background-image:
-        linear-gradient(to top, rgba(50, 201, 225, 1), rgba(50, 201, 225, 0.5)),
+        linear-gradient(to top, rgba(50, 201, 225, 1), rgba(50, 201, 225, 0.2)),
         url(img/hamburger.png);
 }
 
 #ghost {
     background-image:
-        linear-gradient(to top, rgba(77, 82, 184, 1), rgba(77, 82, 184, 0.5)),
+        linear-gradient(to top, rgba(77, 82, 184, 1), rgba(77, 82, 184, 0.2)),
         url(img/ghost.png);
 }
 
 #interlaced {
     background-position: center;
     background-image:
-        linear-gradient(to top, rgba(77, 82, 184, 1), rgba(77, 82, 184, 0.5)),
+        linear-gradient(to top, rgba(77, 82, 184, 1), rgba(77, 82, 184, 0.2)),
         url(img/interlaced.png);
 }
 
 #unannounced {
     background-image:
-        linear-gradient(to top, rgba(212, 59, 59, 1), rgba(212, 59, 59, 0.5)),
+        linear-gradient(to top, rgba(212, 59, 59, 1), rgba(212, 59, 59, 0.2)),
         url(img/unannounced.png);
+}
+
+#harclik {
+    background-image:
+        linear-gradient(to top, rgba(79, 114, 29, 1), rgba(79, 114, 29, 0.2)),
+        url(img/harclik.png);
 }
 
 #plaka {
     background-image:
-        linear-gradient(to top, rgba(211, 116, 0, 1), rgba(211, 116, 0, 0.5)),
+        linear-gradient(to top, rgba(211, 116, 0, 1), rgba(211, 116, 0, 0.2)),
         url(img/plaka.png);
 }
 
 #casus {
     background-image:
-        linear-gradient(to top, rgba(212, 59, 59, 1), rgba(212, 59, 59, 0.5)),
+        linear-gradient(to top, rgba(212, 59, 59, 1), rgba(212, 59, 59, 0.2)),
         url(img/casus.png);
 }
 
