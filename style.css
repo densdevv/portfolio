@@ -228,6 +228,11 @@ a {
     text-align: center;
     padding: 10px;
     border-radius: 10px;
+    margin: 10px;
+    margin-top: 140px;
+    width: calc(100% - 40px);
+    position: fixed;
+    transition: all 0.3s ease-in-out;
 }
 
 .projects-container {
@@ -289,14 +294,13 @@ a {
 
 .game-project {
     border: 2px solid #2E2E2E;
-    box-shadow: 0 0 10px var(--purple);
     background-size: cover;
 }
 
 .game-project:hover {
     transform: scale(1.1);
     border: 2px solid var(--purple);
-    box-shadow: 0 0 30px var(--purple);
+    box-shadow: 0 0 10px var(--purple);
 }
 
 .game-project h3 {
@@ -307,14 +311,13 @@ a {
 
 .web-project {
     border: 2px solid #2E2E2E;
-    box-shadow: 0 0 10px var(--green);
     background-size: cover;
 }
 
 .web-project:hover {
     transform: scale(1.1);
     border: 2px solid var(--green);
-    box-shadow: 0 0 30px var(--green);
+    box-shadow: 0 0 1   0px var(--green);
 }
 
 .web-project h3 {
@@ -362,17 +365,16 @@ a {
         url(img/hamburger.png);
 }
 
+#cimen {
+    background-image:
+        linear-gradient(to top, rgba(33, 92, 8, 1), rgba(33, 92, 8, 0.2)),
+        url(img/cimen.png);
+}
+
 #ghost {
     background-image:
         linear-gradient(to top, rgba(77, 82, 184, 1), rgba(77, 82, 184, 0.2)),
         url(img/ghost.png);
-}
-
-#interlaced {
-    background-position: center;
-    background-image:
-        linear-gradient(to top, rgba(77, 82, 184, 1), rgba(77, 82, 184, 0.2)),
-        url(img/interlaced.png);
 }
 
 #unannounced {
