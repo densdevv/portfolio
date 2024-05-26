@@ -304,7 +304,8 @@ a {
 }
 
 .game-project h3 {
-    background-color: var(--purple);
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
     font-weight: 600;
     color: white;
 }
@@ -317,11 +318,12 @@ a {
 .web-project:hover {
     transform: scale(1.1);
     border: 2px solid var(--green);
-    box-shadow: 0 0 1   0px var(--green);
+    box-shadow: 0 0 10px var(--green);
 }
 
 .web-project h3 {
-    background-color: var(--green);
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
     font-weight: 600;
     color: white;
 }
