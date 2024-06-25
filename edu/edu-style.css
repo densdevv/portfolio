@@ -35,7 +35,7 @@ a {
 hr {
     border: 0;
     border-top: 2px solid var(--secondary-blue);
-    margin: 16px 0;
+    margin: 16px 8px 16px 0;
 }
 
 .section-title {
@@ -45,17 +45,18 @@ hr {
     font-weight: 600;
 }
 
-.intro {
+.info {
     background-color: var(--tertiary-blue);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     padding: 8px;
     border-left: 4px solid var(--primary-blue);
     margin-right: 8px;
+    margin-bottom: 12px;
 }
 
 .disclaimer {
-    background-color: rgb(240, 182, 182);
+    background-color: rgb(252, 233, 233);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     padding: 8px;
@@ -77,8 +78,15 @@ hr {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 8px;
     margin-bottom: 16px;
-    width: 420px;
+    width: 360px !important;
     margin: 0 8px 8px 0;
+    flex-grow: 1;
+}
+
+.test-card-filler {
+    background-color: transparent;
+    padding: 8px;
+    width: 360px !important;
     flex-grow: 1;
 }
 
@@ -180,6 +188,5 @@ hr {
 /*#endsregion Test Results*/
 
 .footer {
-    margin-top: 16px;
     text-align: center;
 }   
