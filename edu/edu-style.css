@@ -1,6 +1,6 @@
 :root {
-    --primary-blue: #2443cd;
-    --secondary-blue: #bfc7ec;
+    --primary-blue: #3b5ae4;
+    --secondary-blue: #cbd3ff;
     --tertiary-blue: #f0f2ff;
     --secondary-text: #545660;
     --background: #fefded;
@@ -62,6 +62,8 @@ hr {
     padding: 8px;
     border-left: 4px solid rgb(190, 48, 48);
     margin-right: 8px;
+    margin-bottom: 12px;
+
 }
 
 /*#region Test Results*/
