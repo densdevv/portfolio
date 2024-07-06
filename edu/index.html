@@ -13,120 +13,210 @@
     <meta name="keywords"
         content="hönigs, honigs, deniz honigs, deniz hönigs, dens dev, densdev, dens, saint joseph, student dev">
     <meta name="description" content="I'm Deniz Hönigs, a 12th grade student studying in Lycée Saint-Joseph d'Istanbul">
+    <script src="https://kit.fontawesome.com/8c71c4d8b8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <h1>👋 Hello!</h1>
-    <div class="info">I'm Deniz Hönigs, a 12<sup>th</sup> grade student studying in <a href="https://sj.k12.tr"
-            target="_blank">Lycée Saint-Joseph d'Istanbul</a> <br>
-        You can find all my grades, test scores and competition rankings here. For my full CV (🇬🇧, 🇹🇷, 🇫🇷) <a
-            href="https://dens.dev/cv" target="_blank">click here</a>.
-    </div>
-    <div class="info">Official report cards, result documents, and certificates may be provided upon request.</div>
+    <div class="content-wrapper">
+        <div id="greeting-lang">
+            <span id="greeting">
+                <h2 data-translate="greeting"></h2>
+                <h1 data-translate="name">I'm Deniz Hönigs</h1>
+            </span>
+            <div class="radio-inputs" id="language-selector">
+                <label class="radio">
+                    <input type="radio" name="language" value="en" checked>
+                    <span class="radio-lang"><img class="lang-flag" src="../img/gb.svg">English</span>
+                </label>
+                <label class="radio">
+                    <input type="radio" name="language" value="tr">
+                    <span class="radio-lang">
+                        <img class="lang-flag" src="../img/tr.svg">Türkçe</span>
+                </label>
 
-    <h2 class="section-title">📑 Grades</h2>
-    <div class="cards-container">
-        <div class="test-card">
-            <div class="test-card-primary">
-                <span class="test-info">
-                    <h3>Prep Class</h3>
-                    <p>2020-2021</p>
-                </span>
-                <span class="test-score">
-                    97.06<span> /100</span>
-                </span>
-            </div>
-            <div class="test-card-secondary">
-                <span class="placements">
-                    <span class="placement-third placement-class">#3 in class</span>
-                    <span class="placement-other placement-grade">#9 in grade</span>
-                </span>
-                <span class="test-subscore">
-                    <p>First Term</p>
-                    <p><b>97.06</b> /100</p>
-                </span>
-                <span class="test-subscore">
-                    <p>Second Term</p>
-                    <p><b>N/A</b></p>
-                </span>
+                <label class="radio">
+                    <input type="radio" name="language" value="fr">
+                    <span class="radio-lang"><img class="lang-flag" src="../img/fr.svg">Français</span>
+                </label>
             </div>
         </div>
-        <div class="test-card">
-            <div class="test-card-primary">
-                <span class="test-info">
-                    <h3>9th Grade</h3>
-                    <p>2021-2022</p>
-                </span>
-                <span class="test-score">
-                    98.28<span> /100</span>
-                </span>
-            </div>
-            <div class="test-card-secondary">
-                <span class="placements">
-                    <span class="placement-first placement-class">#1 in class</span>
-                    <span class="placement-other placement-grade">#8 in grade</span>
-                </span>
-                <span class="test-subscore">
-                    <p>First Term</p>
-                    <p><b>97.94</b> /100</p>
-                </span>
-                <span class="test-subscore">
-                    <p>Second Term</p>
-                    <p><b>98.63</b> /100</p>
-                </span>
+
+        <br>
+        <div class="info">
+            <div class="info-text" data-translate="intro"></div>
+            <div class="info-links-container">
+                <a class="info-link" href="https://discord.com/invite/Ppt2xtnT" target="_blank"><i
+                        class="fa-brands fa-discord"></i> Discord</a>
+                <a class="info-link" href="https://www.linkedin.com/in/deniz-h%C3%B6nigs-213261273/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a class="info-link" href="https://github.com/denswastaken" target="_blank"><i
+                        class="fa-brands fa-github"></i> Github</a>
             </div>
         </div>
-        <div class="test-card">
-            <div class="test-card-primary">
-                <span class="test-info">
-                    <h3>10th Grade</h3>
-                    <p>2022-2023</p>
-                </span>
-                <span class="test-score">
-                    98.65<span> /100</span>
-                </span>
+        <h2 class="section-title" data-target="languages-container">
+            <span class='chevron'>❯</span>
+            <span data-translate="languages"></span>
+        </h2>
+        <div class="cards-container" id="languages-container">
+            <div class="lang-card">
+                <div class="lang-card-primary" id="lang-tr">
+                    <span>
+                        <h3 class="lang-name" data-translate="turkish"></h3>
+                        <h3 class="lang-level" data-translate="mother_tongue"></h3>
+                    </span>
+                </div>
             </div>
-            <div class="test-card-secondary">
-                <span class="placements">
-                    <span class="placement-first placement-class">#1 in class</span>
-                    <span class="placement-third placement-grade">#3 in grade</span>
-                </span>
-                <span class="test-subscore">
-                    <p>First Term</p>
-                    <p><b>98.91</b> /100</p>
-                </span>
-                <span class="test-subscore">
-                    <p>Second Term</p>
-                    <p><b>98.39</b> /100</p>
-                </span>
+            <div class="lang-card">
+                <div class="lang-card-primary" id="lang-de">
+                    <span>
+                        <h3 class="lang-name" data-translate="german"></h3>
+                        <h3 class="lang-level" data-translate="father_tongue"></h3>
+                    </span>
+                </div>
+
             </div>
+            <div class="lang-card">
+                <div class="lang-card-primary" id="lang-fr">
+                    <span>
+                        <h3 class="lang-name" data-translate="french"></h3>
+                        <h3 class="lang-level black-dotted-tooltip tooltip"><span data-translate="c2"></span><span class="tooltip-text">DALF C2 67/100</span></h3>
+                    </span>
+                </div>
+            </div>
+            <div class="lang-card">
+                <div class="lang-card-primary" id="lang-en">
+                    <span>
+                        <h3 class="lang-name" data-translate="english"></h3>
+                        <h3 class="lang-level tooltip"><span data-translate="c1"></span><span class="tooltip-text"> IELTS 8.0 | FCE 182/190</span></h3>
+                    </span>
+
+                </div>
+            </div>
+            <div class="lang-card">
+                <div class="lang-card-primary" id="lang-latin">
+                    <span>
+                        <h3 class="lang-name" data-translate="latin"></h3>
+                        <h3 class="lang-level" data-translate="learning"></h3>
+                    </span>
+                </div>
+            </div>
+            
+
+
+            <div class="lang-card-filler"></div>
+            <div class="lang-card-filler"></div>
+            <div class="lang-card-filler"></div>
         </div>
-        <div class="test-card">
-            <div class="test-card-primary">
-                <span class="test-info">
-                    <h3>11th Grade</h3>
-                    <p>2023-2024</p>
-                </span>
-                <span class="test-score">
-                    98.91<span> /100</span>
-                </span>
+
+        <hr>
+
+        <h2 class="section-title" data-target="grades-container">
+            <span class='chevron'>❯</span>
+            <span data-translate="grades"></span>
+        </h2>
+        <div class="cards-container" id="grades-container">
+            <div class="test-card">
+                <div class="test-card-primary">
+                    <span class="test-info">
+                        <h3 data-translate="grade_prep"></h3>
+                        <p>2020-2021</p>
+                    </span>
+                    <span class="test-score">
+                        97.06<span> /100</span>
+                    </span>
+                </div>
+                <div class="test-card-secondary">
+                    <span class="placements">
+                        <span class="placement-third placement-class" data-translate="class_3rd"></span>
+                        <span class="placement-other placement-grade" data-translate="grade_9th"></span>
+                    </span>
+                    <span class="test-subscore">
+                        <p data-translate="first_term"></p>
+                        <p><b>97.06</b> /100</p>
+                    </span>
+                    <span class="test-subscore">
+                        <p data-translate="second_term"></p>
+                        <p><b class="tooltip">N/A <span class="tooltip-text"
+                                    data-translate="covid_disclaimer"></span></b></p>
+                    </span>
+                </div>
             </div>
-            <div class="test-card-secondary">
-                <span class="placements">
-                    <span class="placement-first placement-class">#1 in class</span>
-                    <span class="placement-first placement-grade">#1 in grade</span>
-                </span>
-                <span class="test-subscore">
-                    <p>First Term</p>
-                    <p><b>98.83</b> /100</p>
-                </span>
-                <span class="test-subscore">
-                    <p>Second Term</p>
-                    <p><b>98.99</b> /100</p>
-                </span>
+            <div class="test-card">
+                <div class="test-card-primary">
+                    <span class="test-info">
+                        <h3 data-translate="grade_9"></h3>
+                        <p>2021-2022</p>
+                    </span>
+                    <span class="test-score">
+                        98.28<span> /100</span>
+                    </span>
+                </div>
+                <div class="test-card-secondary">
+                    <span class="placements">
+                        <span class="placement-first placement-class" data-translate="class_1st"></span>
+                        <span class="placement-other placement-grade" data-translate="grade_8th"></span>
+                    </span>
+                    <span class="test-subscore">
+                        <p data-translate="first_term"></p>
+                        <p><b>97.94</b> /100</p>
+                    </span>
+                    <span class="test-subscore">
+                        <p data-translate="second_term"></p>
+                        <p><b>98.63</b> /100</p>
+                    </span>
+                </div>
             </div>
-        </div>
-        <!--<div class="test-card">
+            <div class="test-card">
+                <div class="test-card-primary">
+                    <span class="test-info">
+                        <h3 data-translate="grade_10"></h3>
+                        <p>2022-2023</p>
+                    </span>
+                    <span class="test-score">
+                        98.65<span> /100</span>
+                    </span>
+                </div>
+                <div class="test-card-secondary">
+                    <span class="placements">
+                        <span class="placement-first placement-class" data-translate="class_1st"></span>
+                        <span class="placement-third placement-grade" data-translate="grade_3rd"></span>
+                    </span>
+                    <span class="test-subscore">
+                        <p data-translate="first_term"></p>
+                        <p><b>98.91</b> /100</p>
+                    </span>
+                    <span class="test-subscore">
+                        <p data-translate="second_term"></p>
+                        <p><b>98.39</b> /100</p>
+                    </span>
+                </div>
+            </div>
+            <div class="test-card">
+                <div class="test-card-primary">
+                    <span class="test-info">
+                        <h3 data-translate="grade_11"></h3>
+                        <p>2023-2024</p>
+                    </span>
+                    <span class="test-score">
+                        98.91<span> /100</span>
+                    </span>
+                </div>
+                <div class="test-card-secondary">
+                    <span class="placements">
+                        <span class="placement-first placement-class" data-translate="class_1st"></span>
+                        <span class="placement-first placement-grade" data-translate="grade_1st"></span>
+                    </span>
+                    <span class="test-subscore">
+                        <p data-translate="first_term"></p>
+                        <p><b>98.83</b> /100</p>
+                    </span>
+                    <span class="test-subscore">
+                        <p data-translate="second_term"></p>
+                        <p><b>98.99</b> /100</p>
+                    </span>
+                </div>
+            </div>
+            <!--<div class="test-card">
             <div class="test-card-primary">
                 <span class="test-info">
                     <h3>12th Grade</h3>
@@ -151,152 +241,205 @@
                 </span>
             </div>
         </div>-->
-        <div class="test-card-filler"></div>
-        <div class="test-card-filler"></div>
-        <div class="test-card-filler"></div>
-    </div>
+            <div class="test-card-filler"></div>
+            <div class="test-card-filler"></div>
+            <div class="test-card-filler"></div>
+        </div>
 
-    <hr>
+        <hr>
 
-    <h2 class="section-title">📑 Test Results</h2>
-    <div class="cards-container">
-        <div class="test-card">
-            <div class="test-card-primary">
-                <span class="test-info">
-                    <h3>SAT</h3>
-                    <p>May 2024</p>
-                </span>
-                <span class="test-score">
-                    1490<span> /1600</span>
-                </span>
+        <h2 class="section-title" data-target="tests-container"><span class='chevron'>❯</span><span
+                data-translate="test_results"></span></h2>
+        <div class="cards-container" id="tests-container">
+            <div class="test-card">
+                <div class="test-card-primary">
+                    <span class="test-info">
+                        <h3>SAT</h3>
+                        <p><span data-translate="may"></span> 2024</p>
+                    </span>
+                    <span class="test-score">
+                        1490<span> /1600</span>
+                    </span>
+                </div>
+                <div class="test-card-secondary">
+                    <span class="test-subscore">
+                        <p data-translate="maths"></p>
+                        <p><b>790</b> /800</p>
+                    </span>
+                    <span class="test-subscore">
+                        <p data-translate="english"></p>
+                        <p><b>700</b> /800</p>
+                    </span>
+                    <a class="view-certificate"
+                        href="https://drive.google.com/file/d/1yhOQUD7EhlB3Pg2v86Va7cErkXjVhmmR/view"
+                        target="_blank"><img src="../img/certificate.svg"><span
+                            data-translate="view_certificate"></span></a>
+                </div>
             </div>
-            <div class="test-card-secondary">
-                <span class="test-subscore">
-                    <p>Maths</p>
-                    <p><b>790</b> /800</p>
-                </span>
-                <span class="test-subscore">
-                    <p>Reading & Writing</p>
-                    <p><b>700</b> /800</p>
-                </span>
+            <div class="test-card">
+                <div class="test-card-primary">
+                    <span class="test-info">
+                        <h3>DALF C2</h3>
+                        <p><span data-translate="jun"></span> 2024</p>
+                    </span>
+                    <span class="test-score">
+                        67<span> /100</span>
+                    </span>
+                </div>
+                <div class="test-card-secondary">
+                    <span class="test-subscore">
+                        <p data-translate="oral">
+                        <p>
+                        <p><b>25</b> /50</p>
+                    </span>
+                    <span class="test-subscore">
+                        <p data-translate="written"></p>
+                        <p><b>42</b> /50</p>
+                    </span>
+                    <a class="certificate-pending tooltip"><img src="../img/pending.svg"><span
+                            data-translate="certificate_pending"></span><span class="tooltip-text"
+                            data-translate="pending_desc"></span></a>
+                </div>
             </div>
+            <div class="test-card">
+                <div class="test-card-primary">
+                    <span class="test-info">
+                        <h3>DALF C1</h3>
+                        <p><span data-translate="jun"></span> 2024</p>
+                    </span>
+                    <span class="test-score">
+                        53.5<span> /100</span>
+                    </span>
+                </div>
+                <div class="test-card-secondary">
+                    <span class="test-subscore">
+                        <p data-translate="listening"></p>
+                        <p><b>15</b> /25</p>
+                    </span>
+                    <span class="test-subscore">
+                        <p data-translate="reading"></p>
+                        <p><b>14</b> /25</p>
+                    </span>
+                    <span class="test-subscore">
+                        <p data-translate="writing"></p>
+                        <p><b>11.5</b> /25</p>
+                    </span>
+                    <span class="test-subscore">
+                        <p data-translate="speaking"></p>
+                        <p><b>13</b> /25</p>
+                    </span>
+                    <a class="certificate-pending tooltip"><img src="../img/pending.svg"><span
+                            data-translate="certificate_pending"></span><span class="tooltip-text"
+                            data-translate="pending_desc"></span></a>
+                </div>
+            </div>
+            <div class="test-card">
+                <div class="test-card-primary">
+                    <span class="test-info">
+                        <h3>DELF B2</h3>
+                        <p><span data-translate="feb"></span> 2024</p>
+                    </span>
+                    <span class="test-score">
+                        93<span> /100</span>
+                    </span>
+                </div>
+                <div class="test-card-secondary">
+                    <span class="test-subscore">
+                        <p data-translate="listening"></p>
+                        <p><b>22.5</b> /25</p>
+                    </span>
+                    <span class="test-subscore">
+                        <p data-translate="reading"></p>
+                        <p><b>23.5</b> /25</p>
+                    </span>
+                    <span class="test-subscore">
+                        <p data-translate="writing"></p>
+                        <p><b>22</b> /25</p>
+                    </span>
+                    <span class="test-subscore">
+                        <p data-translate="speaking"></p>
+                        <p><b>25</b> /25</p>
+                    </span>
+                    <a class="view-certificate"
+                        href="https://drive.google.com/file/d/17qFzSbu0IJnvxVr7JNlMqk6f4-aMZZDq/view"
+                        target="_blank"><img src="../img/certificate.svg"><span
+                            data-translate="view_certificate"></span></a>
+                </div>
+            </div>
+            <div class="test-card">
+                <div class="test-card-primary">
+                    <span class="test-info">
+                        <h3>IELTS Academic</h3>
+                        <p><span data-translate="jun"></span> 2024 • <b>CEFR C1</b></p>
+                    </span>
+                    <span class="test-score">
+                        8.0<span> /9</span>
+                    </span>
+                </div>
+                <div class="test-card-secondary">
+                    <span class="test-subscore">
+                        <p>Listening</p>
+                        <p><b>9.0</b> /9</p>
+                    </span>
+                    <span class="test-subscore">
+                        <p>Reading</p>
+                        <p><b>8.5</b> /9</p>
+                    </span>
+                    <span class="test-subscore">
+                        <p>Writing</p>
+                        <p><b>7.0</b> /9</p>
+                    </span>
+                    <span class="test-subscore">
+                        <p>Speaking</p>
+                        <p><b>8.0</b> /9</p>
+                    </span>
+                    <a class="certificate-pending tooltip"><img src="../img/pending.svg"><span
+                            data-translate="certificate_pending"></span><span class="tooltip-text"
+                            data-translate="pending_desc"></span></a>
+                </div>
+            </div>
+            <div class="test-card">
+                <div class="test-card-primary">
+                    <span class="test-info">
+                        <h3>Cambridge FCE</h3>
+                        <p><span data-translate="jun"></span> 2021 • <b>CEFR C1</b></p>
+                    </span>
+                    <span class="test-score">
+                        182<span> /190</span>
+                    </span>
+                </div>
+                <div class="test-card-secondary">
+                    <span class="test-subscore">
+                        <p>Reading</p>
+                        <p><b>178</b> /190</p>
+                    </span>
+                    <span class="test-subscore">
+                        <p>Use of English</p>
+                        <p><b>187</b> /190</p>
+                    </span>
+                    <span class="test-subscore">
+                        <p>Writing</p>
+                        <p><b>175</b> /190</p>
+                    </span>
+                    <span class="test-subscore">
+                        <p>Listening</p>
+                        <p><b>182</b> /190</p>
+                    </span>
+                    <span class="test-subscore">
+                        <p>Speaking</p>
+                        <p><b>186</b> /190</p>
+                    </span>
+                    <a class="view-certificate"
+                        href="https://drive.google.com/file/d/1v1Pz6GNMXrq4FexD5k2WyM6puuAH-6qR/view"
+                        target="_blank"><img src="../img/certificate.svg"><span
+                            data-translate="view_certificate"></span></a>
+                </div>
+            </div>
+            <div class="test-card-filler"></div>
+            <div class="test-card-filler"></div>
         </div>
-        <div class="test-card">
-            <div class="test-card-primary">
-                <span class="test-info">
-                    <h3>DALF C2</h3>
-                    <p>June 2024</p>
-                </span>
-                <span class="test-score">
-                    67<span> /100</span>
-                </span>
-            </div>
-            <div class="test-card-secondary">
-                <span class="test-subscore">
-                    <p>Partie orale (CO + PO)</p>
-                    <p><b>25</b> /50</p>
-                </span>
-                <span class="test-subscore">
-                    <p>Partie écrite (CE + PE)</p>
-                    <p><b>42</b> /50</p>
-                </span>
-            </div>
-        </div>
-        <div class="test-card">
-            <div class="test-card-primary">
-                <span class="test-info">
-                    <h3>DALF C1</h3>
-                    <p>June 2024</p>
-                </span>
-                <span class="test-score">
-                    53.5<span> /100</span>
-                </span>
-            </div>
-            <div class="test-card-secondary">
-                <span class="test-subscore">
-                    <p>Compréhension de l'oral (CO)</p>
-                    <p><b>15</b> /25</p>
-                </span>
-                <span class="test-subscore">
-                    <p>Compréhension des écrits (CE)</p>
-                    <p><b>14</b> /25</p>
-                </span>
-                <span class="test-subscore">
-                    <p>Production écrite (PE)</p>
-                    <p><b>11.5</b> /25</p>
-                </span>
-                <span class="test-subscore">
-                    <p>Production orale (PO)</p>
-                    <p><b>13</b> /25</p>
-                </span>
-            </div>
-        </div>
-        <div class="test-card">
-            <div class="test-card-primary">
-                <span class="test-info">
-                    <h3>DELF B2</h3>
-                    <p>February 2024</p>
-                </span>
-                <span class="test-score">
-                    93<span> /100</span>
-                </span>
-            </div>
-            <div class="test-card-secondary">
-                <span class="test-subscore">
-                    <p>Compréhension de l'oral (CO)</p>
-                    <p><b>22.5</b> /25</p>
-                </span>
-                <span class="test-subscore">
-                    <p>Compréhension des écrits (CE)</p>
-                    <p><b>23.5</b> /25</p>
-                </span>
-                <span class="test-subscore">
-                    <p>Production écrite (PE)</p>
-                    <p><b>22</b> /25</p>
-                </span>
-                <span class="test-subscore">
-                    <p>Production orale (PO)</p>
-                    <p><b>25</b> /25</p>
-                </span>
-            </div>
-        </div>
-        <div class="test-card">
-            <div class="test-card-primary">
-                <span class="test-info">
-                    <h3>IELTS Academic</h3>
-                    <p>June 2024</p>
-                </span>
-                <span class="test-score">
-                    8.0<span> /9</span>
-                </span>
-            </div>
-            <div class="test-card-secondary">
-                <span class="test-subscore">
-                    <p>Listening</p>
-                    <p><b>9.0</b> /9</p>
-                </span>
-                <span class="test-subscore">
-                    <p>Reading</p>
-                    <p><b>8.5</b> /9</p>
-                </span>
-                <span class="test-subscore">
-                    <p>Writing</p>
-                    <p><b>7.0</b> /9</p>
-                </span>
-                <span class="test-subscore">
-                    <p>Speaking</p>
-                    <p><b>8.0</b> /9</p>
-                </span>
-            </div>
-        </div>
-        <div class="test-card-filler"></div>
-        <div class="test-card-filler"></div>
-        <div class="test-card-filler"></div>
-    </div>
 
-    <hr>
-
-    <!--<h2 class="section-title">🛠️ Projects</h2>
+        <!--<h2 class="section-title">🛠️ Projects</h2>
     <div class="cards-container">
         <div class="test-card">
             <div class="test-card-primary">
@@ -367,80 +510,163 @@
         <div class="test-card-filler"></div>
     </div>-->
 
-    <hr>
+        <hr>
 
-    <h2 class="section-title">🏅 Competitions</h2>
-    <div class="cards-container">
-        <div class="test-card">
-            <div class="test-card-primary">
-                <span class="test-info">
-                    <h3>Concours Kangourou</h3>
-                    <p>mathkang.org</p>
-                </span>
+        <h2 class="section-title" data-target="competitions-container"><span class="chevron">❯</span><span
+                data-translate="competitions"></span></h2>
+        <div class="cards-container" id="competitions-container">
+            <div class="competition-card">
+                <div class="competition-card-primary">
+                    <span class="competition-info">
+                        <h3 data-translate="kangourou"></h3>
+                        <p><span data-translate="french"></span> • <a href="https://mathkang.org"
+                                target="_blank">mathkang.org</a></p>
+                    </span>
+                </div>
+                <div class="competition-card-secondary">
+                    <span class="competition-item">
+                        <p class="competition-year">2023</p>
+                        <p>Seconde</p>
+                        <p><b><i class="fa-solid fa-ranking-star"></i> 0.08%</b></p>
+                        <p><b>#9</b>&nbsp;/11459</p>
+                        <p><a class="view-competition-certificate"
+                                href="https://drive.google.com/file/d/1aHMbv-cds5c4i-CkvfvEX_jB1Y-BozNs/view"
+                                target="_blank"><img src="../img/certificate.svg"><span
+                                    data-translate="view"></span></a></p>
+                    </span>
+
+                    <span class="competition-item">
+                        <p class="competition-year">2024</p>
+                        <p>1ère spé. Maths</p>
+                        <p><b><i class="fa-solid fa-ranking-star"></i> 0.99%</b></p>
+                        <p><b>#39</b>&nbsp;/3901</p>
+                        <p> <a class="view-certificate"
+                                href="https://drive.google.com/file/d/1RB7Tf3atCImQeFdk2vkKB9ZssKvw1qWi/view"
+                                target="_blank"><img src="../img/certificate.svg"><span
+                                    data-translate="view"></span></a></p>
+                    </span>
+                </div>
             </div>
-            <div class="test-card-secondary">
-                <span class="test-subscore">
-                    <p>2023 • Seconde • <b>TOP 0.08%</b> • 9th out of 11459</p>
-                </span>
-                <span class="test-subscore">
-                    <p>2024 • 1ère spé. Maths • <b>TOP 0.99%</b> • 39th out of 3901</p>
-                </span>
+            <div class="competition-card">
+                <div class="competition-card-primary">
+                    <span class="competition-info">
+                        <h3 data-translate="castor"></h3>
+                        <p><span data-translate="french"></span> • <a href="https://castor-informatique.fr"
+                                target="_blank">castor-informatique.fr</a></p>
+                    </span>
+                </div>
+                <div class="competition-card-secondary">
+
+                    <span class="competition-item">
+                        <p class="competition-year">2022</p>
+                        <p>Seconde</p>
+                        <p><b><i class="fa-solid fa-ranking-star"></i> 0.3%</b></p>
+                        <p><b>#125</b>&nbsp;/44757</p>
+                        <p> <a class="view-certificate"
+                                href="https://drive.google.com/file/d/1uf1FUr2GQDPXSftGwkr8_id5t13bqG_4/view"
+                                target="_blank"><img src="../img/certificate.svg"><span
+                                    data-translate="view"></span></a></p>
+                    </span>
+                    <span class="competition-item">
+                        <p class="competition-year">2023</p>
+                        <p>1ère</p>
+                        <p><b><i class="fa-solid fa-ranking-star"></i> 2.1%</b></p>
+                        <p><b>#231</b>&nbsp;/10824</p>
+                        <p> <a class="view-certificate"
+                                href="https://drive.google.com/file/d/1ugh2VQJ2vcBpnMFlNG1q24L41bksRVmb/view"
+                                target="_blank"><img src="../img/certificate.svg"><span
+                                    data-translate="view"></span></a></p>
+                    </span>
+
+                </div>
             </div>
+            <div class="competition-card">
+                <div class="competition-card-primary">
+                    <span class="competition-info">
+                        <h3 data-translate="waterloo"></h3>
+                        <p><span data-translate="french"></span> • <a href="https://cemc.uwaterloo.ca"
+                                target="_blank">cemc.uwaterloo.ca</a></p>
+                    </span>
+                </div>
+                <div class="competition-card-secondary">
+                    <span class="competition-item">
+                        <p class="competition-year">2024</p>
+                        <p><b data-translate="school_champion"></b></p>
+                        <p data-translate="intl_honor_roll">International Honor Roll</p>
+                        <p> <a class="view-certificate"
+                                href="https://drive.google.com/file/d/1uXyY9XNkC2IcClWQz9-GWx6oO8poV8_D/view"
+                                target="_blank"><img src="../img/certificate.svg"><span
+                                    data-translate="view"></span></a></p>
+                    </span>
+                </div>
+            </div>
+            <div class="competition-card">
+                <div class="competition-card-primary">
+                    <span class="competition-info">
+                        <h3 data-translate="cs"></h3>
+                        <p><span data-translate="french"></span> • Saint-Joseph
+                        </p>
+                    </span>
+                </div>
+                <div class="competition-card-secondary">
+                    <span class="competition-item">
+                        <p class="competition-year">2022</p>
+                        <p data-translate="grade_9"></p>
+                        <p data-translate="participation"></p>
+                        <p> <a class="view-certificate"
+                                href="https://drive.google.com/file/d/1uttZW0y6MR6tuBIFf3Xxqk3S8bLp4UiJ/view"
+                                target="_blank"><img src="../img/certificate.svg"><span
+                                    data-translate="view"></span></a></p>
+
+                    </span>
+                    <span class="competition-item">
+                        <p class="competition-year">2023</p>
+                        <p data-translate="grade_10"></p>
+                        <p data-translate="participation"></p>
+                        <p> <a class="view-certificate"
+                                href="https://drive.google.com/file/d/1uyRU9-WIDSQ9kIl_f1QlhxTVemrgcZ9M/view"
+                                target="_blank"><img src="../img/certificate.svg"><span
+                                    data-translate="view"></span></a></p>
+
+                    </span>
+                    <span class="competition-item">
+                        <p class="competition-year">2024</p>
+                        <p data-translate="grade_11"></p>
+                        <p><b data-translate="silver"></b></p>
+                        <p> <a class="view-certificate"
+                                href="https://drive.google.com/file/d/1v0p1aENPu-Z0ofT79YJxelAJg9C1J7uX/view"
+                                target="_blank"><img src="../img/certificate.svg"><span
+                                    data-translate="view"></span></a></p>
+                    </span>
+ 
+                </div>
+            </div>
+            <div class="competition-card">
+                <div class="competition-card-primary">
+                    <span class="competition-info">
+                        <h3 data-translate="coder"></h3>
+                        <p>Saint-Joseph</p>
+                    </span>
+                </div>
+                <div class="competition-card-secondary">
+                    <span class="competition-item">
+                        <p class="competition-year">2022</p>
+                        <p data-translate="grade_9"></p>
+                        <p><b data-translate="grade_champion"></b></p>
+                        <p>                    <a class="view-certificate"
+                            href="https://drive.google.com/file/d/1utpvMlLwS2lQhid7b3vyup-kTcIxqaoN/view"
+                            target="_blank"><img src="../img/certificate.svg"><span data-translate="view"></span></a></p>
+                    </span>
+
+                </div>
+            </div>
+            <div class="competition-card-filler"></div>
+            <div class="competition-card-filler"></div>
+
         </div>
-        <div class="test-card">
-            <div class="test-card-primary">
-                <span class="test-info">
-                    <h3>Concours Castor</h3>
-                    <p>castor-informatique.fr</p>
-                </span>
-            </div>
-            <div class="test-card-secondary">
-                <span class="test-subscore">
-                    <p>2023 • Seconde • <b>TOP 0.3%</b> • 125th out of 44757</p>
-                </span>
-                <span class="test-subscore">
-                    <p>2024 • 1ère • <b>TOP 2.1%</b> • 231st out of 10824</p>
-                </span>
-            </div>
-        </div>
-        <div class="test-card">
-            <div class="test-card-primary">
-                <span class="test-info">
-                    <h3>Waterloo University</h3>
-                    <p>cemc.uwaterloo.ca</p>
-                </span>
-            </div>
-            <div class="test-card-secondary">
-                <span class="test-subscore">
-                    <p>2024 • Fermat Contest • <b>School Champion</b> and International Honor Roll</p>
-                    <p></p>
-                </span>
-            </div>
-        </div>
-        <div class="test-card">
-            <div class="test-card-primary">
-                <span class="test-info">
-                    <h3>Concours Scientifique SJ</h3>
-                    <p>sj.k12.tr</p>
-                </span>
-            </div>
-            <div class="test-card-secondary">
-                <span class="test-subscore">
-                    <p>2021 • 2022 • 2023</p>
-                    <p>Participation</p>
-                </span>
-                <span class="test-subscore">
-                    <p>2024</p>
-                    <p><b>Silver Medalist</b></b></p>
-                </span>
-            </div>
-        </div>
-        <div class="test-card-filler"></div>
-        <div class="test-card-filler"></div>
-        <div class="test-card-filler"></div>
     </div>
-
-    <p class="footer"><b>Edu v1.3</b> • © 2024 Deniz Hönigs • <a href="https://dens.dev">dens.dev</a></p>
+    <p class="footer"><b>Edu v2.0</b> • © 2024 Deniz Hönigs • <a href="https://dens.dev">dens.dev</a></p>
 </body>
+<script src="translations.js"></script>
 
 </html>
