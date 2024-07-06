@@ -61,7 +61,10 @@ hr {
     position: relative;
     display: inline-block;
     cursor: help;
-    opacity: 0.8;
+}
+
+.black-dotted-tooltip {
+    border-bottom: black 1px dotted !important;
 }
 
 .tooltip .tooltip-text {
@@ -71,6 +74,8 @@ hr {
     background-color: var(--tertiary-blue);
     font-weight: 400;
     color: #000;
+    text-shadow: none;
+    font-size: 14px;
     text-align: center;
     padding: 6px;
     border-radius: 4px;
@@ -81,6 +86,7 @@ hr {
     transform: translateX(-50%);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border: 1px dotted var(--secondary-blue);
+    opacity: 0.8;
 }
 
 .tooltip .tooltip-text::after {
@@ -92,7 +98,7 @@ hr {
     border-width: 5px;
     border-style: solid;
     border-color: transparent transparent var(--secondary-blue) transparent;
-  }
+}
 
 .tooltip:hover .tooltip-text {
     visibility: visible;
@@ -185,6 +191,117 @@ hr {
     margin-right: 8px;
     margin-top: 24px;
 }
+
+/*#region Languages*/
+.lang-card {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    margin-bottom: 16px;
+    width: 300px !important;
+    margin: 0 8px 8px 0;
+    flex-grow: 1;
+}
+
+.lang-card-primary {
+    max-height: 100px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+
+}
+
+.lang-card-primary span {
+    text-shadow: 0 0 4px rgba(0, 0, 0, 1);
+    /*-webkit-text-stroke: 1px black;*/
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.lang-name {
+    font-size: 36px;
+    margin: 24px 0 0 0;
+    font-weight: 600;
+}
+
+.lang-level {
+    font-size: 18px;
+    margin: 0 0 28px 0;
+    font-weight: 600;
+}
+
+#lang-tr {
+    background-image: url(../img/tr.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#lang-de {
+    background:
+        linear-gradient(to right, #000000 0%, #000000 100%),
+        linear-gradient(to right, #FF0000 0%, #FF0000 100%),
+        linear-gradient(to right, #FFCC00 0%, #FFCC00 100%);
+    background-size: 100% 33.5%;
+    background-repeat: no-repeat;
+    background-position: top, center, bottom;
+}
+
+#lang-en {
+    background-image: url(../img/eng.png);
+    background-size: cover;
+    background-position: center;
+
+    background-repeat: no-repeat;
+}
+
+#lang-fr {
+    background:
+        linear-gradient(to bottom, #002551 0%, #002551 100%),
+        linear-gradient(to bottom, #ffffff 0%, #ffffff 100%),
+        linear-gradient(to bottom, #c81025 0%, #c81025 100%);
+    background-size: 33.5% 100%;
+    background-repeat: no-repeat;
+    background-position: left, center, right;
+}
+
+#lang-latin {
+    background-image: url(../img/latin.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.lang-card-filler {
+    background-color: transparent;
+    padding: 12px;
+    width: 300px !important;
+    flex-grow: 1;
+}
+
+/* #lang-en {
+    background:
+        linear-gradient(to right, #c8102e 40%, var(--tertiary-blue) 100%),
+
+        linear-gradient(to right, #ffffff 40%, var(--tertiary-blue) 100%),
+        linear-gradient(to right, #012169 40%, var(--tertiary-blue) 100%),
+        linear-gradient(to right, #ffffff 40%, var(--tertiary-blue) 100%),
+        linear-gradient(to right, #c8102e 40%, var(--tertiary-blue) 100%),
+        linear-gradient(to right, #ffffff 40%, var(--tertiary-blue) 100%),
+        linear-gradient(to right, #012169 40%, var(--tertiary-blue) 100%),
+        linear-gradient(to right, #ffffff 40%, var(--tertiary-blue) 100%),
+        linear-gradient(to right, #c8102e 40%, var(--tertiary-blue) 100%);
+
+    background-size: 100% 5px, 100% 8px, 100% 20px, 100% 7px, 100% 20px, 100% 7px, 100% 20px, 100% 5px, 100% 8px;
+    background-repeat: no-repeat;
+    background-position: 0 0px, 0 5px, 0 13px, 0 33px, 0 40px, 0 60px, 0 67px, 0 87px, 0 92px;
+} */
+
+/*#endregion Languages*/
+
 
 /*#region Test Results*/
 .cards-container {
@@ -443,8 +560,7 @@ hr {
     width: 50px !important;
 }
 
-.view-competition-certificate
-{
+.view-competition-certificate {
     display: flex;
     flex-direction: row;
     opacity: 0.8;
