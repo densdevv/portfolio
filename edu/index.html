@@ -80,7 +80,8 @@
                     </span>
                     <span class="test-subscore">
                         <p data-translate="second_term"></p>
-                        <p><b>N/A</b></p>
+                        <p><b class="tooltip">N/A <span class="tooltip-text"
+                                    data-translate="covid_disclaimer"></span></b></p>
                     </span>
                 </div>
             </div>
@@ -239,8 +240,9 @@
                         <p data-translate="written"></p>
                         <p><b>42</b> /50</p>
                     </span>
-                    <a class="certificate-pending" href="#" target="_blank"><img src="../img/pending.svg"><span
-                            data-translate="certificate_pending"></span></a>
+                    <a class="certificate-pending tooltip"><img src="../img/pending.svg"><span
+                            data-translate="certificate_pending"></span><span class="tooltip-text"
+                            data-translate="pending_desc"></span></a>
                 </div>
             </div>
             <div class="test-card">
@@ -270,8 +272,9 @@
                         <p data-translate="speaking"></p>
                         <p><b>13</b> /25</p>
                     </span>
-                    <a class="certificate-pending" href="#" target="_blank"><img src="../img/pending.svg"><span
-                            data-translate="certificate_pending"></span></a>
+                    <a class="certificate-pending tooltip"><img src="../img/pending.svg"><span
+                            data-translate="certificate_pending"></span><span class="tooltip-text"
+                            data-translate="pending_desc"></span></a>
                 </div>
             </div>
             <div class="test-card">
@@ -334,8 +337,9 @@
                         <p>Speaking</p>
                         <p><b>8.0</b> /9</p>
                     </span>
-                    <a class="certificate-pending" href="#" target="_blank"><img src="../img/pending.svg"><span
-                            data-translate="certificate_pending"></span></a>
+                    <a class="certificate-pending tooltip"><img src="../img/pending.svg"><span
+                            data-translate="certificate_pending"></span><span class="tooltip-text"
+                            data-translate="pending_desc"></span></a>
                 </div>
             </div>
             <div class="test-card">
@@ -455,120 +459,154 @@
         <h2 class="section-title" data-target="competitions-container"><span class="chevron">❯</span><span
                 data-translate="competitions"></span></h2>
         <div class="cards-container" id="competitions-container">
-            <div class="test-card">
-                <div class="test-card-primary">
-                    <span class="test-info">
+            <div class="competition-card">
+                <div class="competition-card-primary">
+                    <span class="competition-info">
                         <h3 data-translate="kangourou"></h3>
                         <p><span data-translate="french"></span> • <a href="https://mathkang.org"
                                 target="_blank">mathkang.org</a></p>
                     </span>
                 </div>
-                <div class="test-card-secondary">
-                    <span class="test-subscore">
-                        <p>2023 • Seconde • <b>TOP 0.08%</b> • 9th out of 11459</p>
+                <div class="competition-card-secondary">
+                    <span class="competition-item">
+                        <p class="competition-year">2023</p>
+                        <p>Seconde</p>
+                        <p><b><i class="fa-solid fa-ranking-star"></i> 0.08%</b></p>
+                        <p><b>#9</b>&nbsp;/11459</p>
+                        <p><a class="view-competition-certificate"
+                                href="https://drive.google.com/file/d/1aHMbv-cds5c4i-CkvfvEX_jB1Y-BozNs/view"
+                                target="_blank"><img src="../img/certificate.svg"><span
+                                    data-translate="view"></span></a></p>
                     </span>
-                    <a class="view-certificate"
-                        href="https://drive.google.com/file/d/1aHMbv-cds5c4i-CkvfvEX_jB1Y-BozNs/view"
-                        target="_blank"><img src="../img/certificate.svg"><span
-                            data-translate="view_certificate"></span></a>
-                    <span class="test-subscore">
-                        <p>2024 • 1ère spé. Maths • <b>TOP 0.99%</b> • 39th out of 3901</p>
+
+                    <span class="competition-item">
+                        <p class="competition-year">2024</p>
+                        <p>1ère spé. Maths</p>
+                        <p><b><i class="fa-solid fa-ranking-star"></i> 0.99%</b></p>
+                        <p><b>#39</b>&nbsp;/3901</p>
+                        <p> <a class="view-certificate"
+                                href="https://drive.google.com/file/d/1RB7Tf3atCImQeFdk2vkKB9ZssKvw1qWi/view"
+                                target="_blank"><img src="../img/certificate.svg"><span
+                                    data-translate="view"></span></a></p>
                     </span>
-                    <a class="view-certificate"
-                        href="https://drive.google.com/file/d/1RB7Tf3atCImQeFdk2vkKB9ZssKvw1qWi/view"
-                        target="_blank"><img src="../img/certificate.svg"><span
-                            data-translate="view_certificate"></span></a>
                 </div>
             </div>
-            <div class="test-card">
-                <div class="test-card-primary">
-                    <span class="test-info">
+            <div class="competition-card">
+                <div class="competition-card-primary">
+                    <span class="competition-info">
                         <h3 data-translate="castor"></h3>
                         <p><span data-translate="french"></span> • <a href="https://castor-informatique.fr"
                                 target="_blank">castor-informatique.fr</a></p>
                     </span>
                 </div>
-                <div class="test-card-secondary">
-                    <span class="test-subscore">
-                        <p>2022 • Seconde • <b>TOP 0.3%</b> • 125th out of 44757</p>
+                <div class="competition-card-secondary">
+
+                    <span class="competition-item">
+                        <p class="competition-year">2022</p>
+                        <p>Seconde</p>
+                        <p><b><i class="fa-solid fa-ranking-star"></i> 0.3%</b></p>
+                        <p><b>#125</b>&nbsp;/44757</p>
+                        <p> <a class="view-certificate"
+                                href="https://drive.google.com/file/d/1uf1FUr2GQDPXSftGwkr8_id5t13bqG_4/view"
+                                target="_blank"><img src="../img/certificate.svg"><span
+                                    data-translate="view"></span></a></p>
                     </span>
-                    <a class="view-certificate"
-                        href="https://drive.google.com/file/d/1uf1FUr2GQDPXSftGwkr8_id5t13bqG_4/view"
-                        target="_blank"><img src="../img/certificate.svg"><span
-                            data-translate="view_certificate"></span></a>
-                    <span class="test-subscore">
-                        <p>2023 • 1ère • <b>TOP 2.1%</b> • 231st out of 10824</p>
+                    <span class="competition-item">
+                        <p class="competition-year">2023</p>
+                        <p>1ère</p>
+                        <p><b><i class="fa-solid fa-ranking-star"></i> 2.1%</b></p>
+                        <p><b>#231</b>&nbsp;/10824</p>
+                        <p> <a class="view-certificate"
+                                href="https://drive.google.com/file/d/1ugh2VQJ2vcBpnMFlNG1q24L41bksRVmb/view"
+                                target="_blank"><img src="../img/certificate.svg"><span
+                                    data-translate="view"></span></a></p>
                     </span>
-                    <a class="view-certificate"
-                        href="https://drive.google.com/file/d/1ugh2VQJ2vcBpnMFlNG1q24L41bksRVmb/view"
-                        target="_blank"><img src="../img/certificate.svg"><span
-                            data-translate="view_certificate"></span></a>
+
                 </div>
             </div>
-            <div class="test-card">
-                <div class="test-card-primary">
-                    <span class="test-info">
+            <div class="competition-card">
+                <div class="competition-card-primary">
+                    <span class="competition-info">
                         <h3 data-translate="waterloo"></h3>
                         <p><span data-translate="french"></span> • <a href="https://cemc.uwaterloo.ca"
                                 target="_blank">cemc.uwaterloo.ca</a></p>
                     </span>
                 </div>
-                <div class="test-card-secondary">
-                    <span class="test-subscore">
-                        <p>2024 • <b>School Champion</b> and International Honor Roll</p>
-                        <p></p>
+                <div class="competition-card-secondary">
+                    <span class="competition-item">
+                        <p class="competition-year">2024</p>
+                        <p><b data-translate="school_champion"></b></p>
+                        <p data-translate="intl_honor_roll">International Honor Roll</p>
+                        <p> <a class="view-certificate"
+                                href="https://drive.google.com/file/d/1uXyY9XNkC2IcClWQz9-GWx6oO8poV8_D/view"
+                                target="_blank"><img src="../img/certificate.svg"><span
+                                    data-translate="view"></span></a></p>
                     </span>
-                    <a class="view-certificate"
-                        href="https://drive.google.com/file/d/1uXyY9XNkC2IcClWQz9-GWx6oO8poV8_D/view"
-                        target="_blank"><img src="../img/certificate.svg"><span
-                            data-translate="view_certificate"></span></a>
                 </div>
             </div>
-            <div class="test-card">
-                <div class="test-card-primary">
-                    <span class="test-info">
+            <div class="competition-card">
+                <div class="competition-card-primary">
+                    <span class="competition-info">
                         <h3 data-translate="cs"></h3>
-                        <p><span data-translate="french"></span> • <a
-                                href="https://sj.k12.tr/etkinlikler/bilimsel-etkinlikler" target="_blank">sj.k12.tr</a>
+                        <p><span data-translate="french"></span> • Saint-Joseph
                         </p>
                     </span>
                 </div>
-                <div class="test-card-secondary">
-                    <span class="test-subscore">
-                        <p>2021 • 2022 • 2023</p>
-                        <p>Participation</p>
+                <div class="competition-card-secondary">
+                    <span class="competition-item">
+                        <p class="competition-year">2022</p>
+                        <p data-translate="grade_9"></p>
+                        <p data-translate="participation"></p>
+                        <p> <a class="view-certificate"
+                                href="https://drive.google.com/file/d/1uttZW0y6MR6tuBIFf3Xxqk3S8bLp4UiJ/view"
+                                target="_blank"><img src="../img/certificate.svg"><span
+                                    data-translate="view"></span></a></p>
+
                     </span>
-                    <span class="test-subscore">
-                        <p>2024</p>
-                        <p><b>Silver Medalist</b></b></p>
+                    <span class="competition-item">
+                        <p class="competition-year">2023</p>
+                        <p data-translate="grade_10"></p>
+                        <p data-translate="participation"></p>
+                        <p> <a class="view-certificate"
+                                href="https://drive.google.com/file/d/1uyRU9-WIDSQ9kIl_f1QlhxTVemrgcZ9M/view"
+                                target="_blank"><img src="../img/certificate.svg"><span
+                                    data-translate="view"></span></a></p>
+
                     </span>
-                    <a class="view-certificate"
-                        href="https://drive.google.com/drive/folders/1sSoSWg9v7c7NYzkHeGY0JkSe7RgaHCA0"
-                        target="_blank"><img src="../img/certificate.svg"><span
-                            data-translate="view_certificate"></span></a>
+                    <span class="competition-item">
+                        <p class="competition-year">2024</p>
+                        <p data-translate="grade_11"></p>
+                        <p><b data-translate="silver"></b></p>
+                        <p> <a class="view-certificate"
+                                href="https://drive.google.com/file/d/1v0p1aENPu-Z0ofT79YJxelAJg9C1J7uX/view"
+                                target="_blank"><img src="../img/certificate.svg"><span
+                                    data-translate="view"></span></a></p>
+                    </span>
+ 
                 </div>
             </div>
-            <div class="test-card">
-                <div class="test-card-primary">
-                    <span class="test-info">
+            <div class="competition-card">
+                <div class="competition-card-primary">
+                    <span class="competition-info">
                         <h3 data-translate="coder"></h3>
                         <p>Saint-Joseph</p>
                     </span>
                 </div>
-                <div class="test-card-secondary">
-                    <span class="test-subscore">
-                        <p>2022</p>
-                        <p><b>Winner</b></p>
+                <div class="competition-card-secondary">
+                    <span class="competition-item">
+                        <p class="competition-year">2022</p>
+                        <p data-translate="grade_9"></p>
+                        <p><b data-translate="grade_champion"></b></p>
+                        <p>                    <a class="view-certificate"
+                            href="https://drive.google.com/file/d/1utpvMlLwS2lQhid7b3vyup-kTcIxqaoN/view"
+                            target="_blank"><img src="../img/certificate.svg"><span data-translate="view"></span></a></p>
                     </span>
-                    <a class="view-certificate"
-                        href="https://drive.google.com/file/d/1utpvMlLwS2lQhid7b3vyup-kTcIxqaoN/view"
-                        target="_blank"><img src="../img/certificate.svg"><span
-                            data-translate="view_certificate"></span></a>
+
                 </div>
             </div>
-            <div class="test-card-filler"></div>
-            <div class="test-card-filler"></div>
-            <div class="test-card-filler"></div>
+            <div class="competition-card-filler"></div>
+            <div class="competition-card-filler"></div>
+
         </div>
     </div>
     <p class="footer"><b>CV v2.0 [WIP]</b> • © 2024 Deniz Hönigs • <a href="https://dens.dev">dens.dev</a></p>

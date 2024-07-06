@@ -2,12 +2,20 @@
     --primary-blue: #3b5ae4;
     --secondary-blue: #cbd3ff;
     --tertiary-blue: #f3f5ff;
+    --primary-yellow: #f2e181;
+    --secondary-yellow: #fff9d9;
+    --tertiary-yellow: #fffdf2;
+    --primary-red: #be3030;
+    --secondary-red: #fce9e9;
+    --tertiary-red: #fff3f3;
     --secondary-text: #545660;
     --background: #ffffff;
 }
 
 ::-webkit-scrollbar {
     width: 8px;
+    margin-top: 1px;
+    height: 1px;
 }
 
 ::-webkit-scrollbar-track {
@@ -46,6 +54,48 @@ hr {
     border: 0;
     border-top: 2px solid var(--secondary-blue);
     margin: 16px 8px 16px 0;
+}
+
+.tooltip {
+    border-bottom: 1px dotted;
+    position: relative;
+    display: inline-block;
+    cursor: help;
+    opacity: 0.8;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    min-width: 360px;
+    width: fit-content;
+    background-color: var(--tertiary-blue);
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+    padding: 6px;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px dotted var(--secondary-blue);
+}
+
+.tooltip .tooltip-text::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent var(--secondary-blue) transparent;
+  }
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
 }
 
 .section-title {
@@ -277,25 +327,25 @@ hr {
     margin: 6px;
     opacity: 0.8;
     justify-content: center;
-
+    width: fit-content;
+    align-self: center;
+    z-index: 21;
 }
 
 .view-certificate {
     width: fit-content;
     align-self: center;
-    padding: 4px;
     cursor: pointer;
     color: var(--primary-blue);
 }
 
 .certificate-pending {
-    pointer-events: none;
+    pointer-events: all;
     color: #757DA1;
     text-decoration: none;
-
 }
 
-.view-certificate img{
+.view-certificate img {
     width: 24px;
     margin-right: 4px;
 }
@@ -308,6 +358,110 @@ hr {
 
 /*#endsregion Test Results*/
 
+/*#region Competitions*/
+.competition-card {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    margin-bottom: 16px;
+    width: 480px !important;
+    margin: 0 8px 8px 0;
+    flex-grow: 1;
+    overflow-x: hidden;
+}
+
+.competition-card-filler {
+    background-color: transparent;
+    padding: 12px;
+    width: 480px !important;
+    flex-grow: 1;
+}
+
+.competition-card-primary {
+    background-color: var(--secondary-red);
+    border-left: 4px solid var(--primary-red);
+    padding-left: 8px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.competition-info h3 {
+    margin: 0;
+    padding-top: 4px;
+    font-size: 24px;
+    color: var(--primary-red);
+}
+
+.competition-info p {
+    margin: 0;
+    padding: 4px 0 8px 0;
+    font-size: 14px;
+    color: var(--secondary-text);
+}
+
+.competition-card-secondary {
+    display: flex;
+    flex-direction: column;
+}
+
+.competition-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4px;
+    border-radius: 2px;
+    max-height: 32px !important;
+    overflow-x: auto;
+}
+
+.competition-item p {
+    margin: 0 0 0 4px;
+    padding: 4px 8px;
+    font-size: 14px;
+    color: var(--secondary-text);
+    background-color: var(--tertiary-red);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+    width: 120px;
+    text-wrap: nowrap;
+}
+
+.competition-year {
+    background-color: var(--secondary-red) !important;
+    margin-left: 0 !important;
+    font-weight: 600;
+    max-width: 50px !important;
+    width: 50px !important;
+}
+
+.view-competition-certificate
+{
+    display: flex;
+    flex-direction: row;
+    opacity: 0.8;
+    justify-content: center;
+    width: fit-content;
+    align-self: center;
+    cursor: pointer;
+    color: var(--primary-blue);
+}
+
+.view-competition-certificate img {
+    width: 24px;
+    margin-right: 4px;
+}
+
+/*#endregion Competitions*/
+
 .footer {
     text-align: center;
     position: relative;
@@ -318,7 +472,7 @@ hr {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    border-radius: 0.5rem;
+    border-radius: 4px;
     background-color: #fff;
     box-sizing: border-box;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -412,7 +566,7 @@ hr {
     .info-text {
         width: calc(100% - 24px);
     }
-    
+
     .info-links-container {
         width: calc(100% - 16px);
         flex-direction: row;

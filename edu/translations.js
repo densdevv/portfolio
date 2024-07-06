@@ -3,7 +3,7 @@ const translations = {
     "en": {
         greeting: "👋 Hey there!",
         name: "I'm <span>Deniz Hönigs</span>",
-        intro: "I'm a 12th grade student studying in <a href='https://sj.k12.tr' target='_blank'>Istanbul Saint-Joseph French High School</a>. <br> I'm mostly into programming and anything about technology. I've been invested in this stuff since primary school, looking for ways to improve and learn more. I effectively started my developer journey by creating video games as a hobby, which later ended up with me founding an indie game studio, where I worked on a variety of games for over 5 years. During an important portion of these years, I went into the domain of project management, overseeing and managing multiple game projects - simultaneously at times. Being born in a bilingual family and having studied in a French high school, I tend to learn new languages – in which I aspire to achieve proficiency.",
+        intro: "I'm a 12th grade student studying in <a href='https://sj.k12.tr' target='_blank'>Istanbul Saint-Joseph French High School</a>. <br> I'm mostly into programming and anything about technology. I've been invested in this stuff since primary school, looking for ways to improve and learn more. I effectively started my developer journey by creating video games as a hobby, which later ended up with me founding an indie game studio, where I worked on a variety of games for nearly 4 years. During an important portion of these years, I went into the domain of project management, overseeing and managing multiple game projects - simultaneously at times. Being born in a bilingual family and having studied in a French high school, I tend to learn new languages – in which I aspire to achieve proficiency.",
         report_cards_info: "Official report cards, result documents, and certificates may be provided upon request.",
         grades: "📑 Grades",
         first_term: "First Term",
@@ -41,11 +41,19 @@ const translations = {
         coder: "Coder of the Year",
         view_certificate: "View certificate",
         certificate_pending: "Certificate pending",
+        covid_disclaimer: "Due to the COVID-19 pandemic, the Ministry of National Education allowed students to wipe second term grades.",
+        pending_desc: "Results were officially published, but the certificate has not arrived yet.",
+        view: "View",
+        school_champion: "School Champion",
+        grade_champion: "Grade Champion",
+        intl_honor_roll: "International Honor Roll",
+        participation: "Participation",
+        silver: "Silver Medalist",
     },
     "tr": {
         greeting: "👋 Merhaba!",
         name: "Ben, <span>Deniz Hönigs</span>",
-        intro: "Ben, <a href='https://sj.k12.tr' target='_blank'>İstanbul Saint-Joseph Fransız Lisesi</a>nde okuyan bir 12. sınıf öğrencisiyim. <br> Genel olarak yazılım ve teknolojiyle alakalı her şeyle ilgileniyorum. İlkokuldan beri bu konularla haşır neşir olup kendimi geliştirmenin ve daha fazlasını öğrenmenin yollarını arıyorum. Geliştiricilik yolculuğuma hobi olarak bilgisayar oyunları üreterek başladım, bu da beni 5 yılı aşkın süre boyunca çeşitli oyunlar üzerinde çalışacağım bağımsız bir oyun stüdyosu kurmama önayak oldu. Bu yılların önemli bir kısmında proje yönetimi alanına daldım ve (zaman zaman aynı anda) birden fazla oyun projesini denetledim ve yönettim. İki dilli bir ailede doğmamın ve bir Fransız lisesinde okumamın etkisiyle yeni diller öğrenme – ve bu dillerde yetkinlik kazanma - eğilimindeyim.",
+        intro: "Ben, <a href='https://sj.k12.tr' target='_blank'>İstanbul Saint-Joseph Fransız Lisesi</a>nde okuyan bir 12. sınıf öğrencisiyim. <br> Genel olarak yazılım ve teknolojiyle alakalı her şeyle ilgileniyorum. İlkokuldan beri bu konularla haşır neşir olup kendimi geliştirmenin ve daha fazlasını öğrenmenin yollarını arıyorum. Geliştiricilik yolculuğuma hobi olarak bilgisayar oyunları üreterek başladım, bu da beni 4 yıla yakın süre boyunca çeşitli oyunlar üzerinde çalışacağım bağımsız bir oyun stüdyosu kurmama önayak oldu. Bu yılların önemli bir kısmında proje yönetimi alanına daldım ve (zaman zaman aynı anda) birden fazla oyun projesini denetledim ve yönettim. İki dilli bir ailede doğmamın ve bir Fransız lisesinde okumamın etkisiyle yeni diller öğrenme – ve bu dillerde yetkinlik kazanma - eğilimindeyim.",
         report_cards_info: "Resmi not dökümleri, sonuç belgeleri ve sertifikalar talep üzerine sağlanabilir.",
         grades: "📑 Notlar",
         first_term: "Birinci Dönem",
@@ -83,11 +91,19 @@ const translations = {
         coder: "Yılın Kodcusu",
         view_certificate: "Sertifikayı görüntüle",
         certificate_pending: "Sertifika bekleniyor",
+        covid_disclaimer: "COVID-19 pandemisi nedeniyle Milli Eğitim Bakanlığı öğrencilere ikinci dönem notlarını silme hakkı tanıdı.",
+        pending_desc: "Sonuçlar resmi olarak yayınlandı, ancak sertifika henüz ulaşmadı.",
+        view: "Görüntüle",
+        school_champion: "Okul Şampiyonu",
+        grade_champion: "Dönem Şampiyonu",
+        intl_honor_roll: "U.arası Onur Listesi",
+        participation: "Katılım",
+        silver: "Gümüş Madalya",
     },
     "fr": {
         greeting: "👋 Bonjour!",
         name: "Je suis <span>Deniz Hönigs</span>",
-        intro: "Je suis élève de terminale au <a href='https://sj.k12.tr' target='_blank'>Lycée Français Saint-Joseph d'Istanbul</a>. <br> Je m'intéresse surtout à la programmation et à tout ce qui touche à la technologie. Je m'y intéresse depuis l'école primaire, cherchant à m'améliorer et à apprendre davantage. J'ai commencé mon parcours de développeur en créant des jeux vidéo en tant que hobby, ce qui m'a amené à fonder un studio indépendant de jeux, où j'ai travaillé sur une variété de jeux pendant plus de 5 ans. Pendant une grande partie de ces années, j'ai travaillé dans le domaine de la gestion de projet, supervisant et gérant plusieurs projets de jeux - parfois simultanément. Étant né dans une famille bilingue et ayant étudié dans un lycée français, j'ai tendance à apprendre de nouvelles langues - dans lesquelles j'aspire à devenir compétent.",
+        intro: "Je suis élève de terminale au <a href='https://sj.k12.tr' target='_blank'>Lycée Français Saint-Joseph d'Istanbul</a>. <br> Je m'intéresse surtout à la programmation et à tout ce qui touche à la technologie. Je m'y intéresse depuis l'école primaire, cherchant à m'améliorer et à apprendre davantage. J'ai commencé mon parcours de développeur en créant des jeux vidéo en tant que hobby, ce qui m'a amené à fonder un studio indépendant de jeux, où j'ai travaillé sur une variété de jeux pendant presque 4 ans. Pendant une grande partie de ces années, j'ai travaillé dans le domaine de la gestion de projet, supervisant et gérant plusieurs projets de jeux - parfois simultanément. Étant né dans une famille bilingue et ayant étudié dans un lycée français, j'ai tendance à apprendre de nouvelles langues - dans lesquelles j'aspire à devenir compétent.",
         report_cards_info: "Les bulletins officiels, les documents de résultats et les certificats peuvent être fournis sur demande.",
         grades: "📑 Notes",
         first_term: "Premier Semestre",
@@ -125,6 +141,14 @@ const translations = {
         coder: "Codeur de l'année",
         view_certificate: "Afficher le certificat",
         certificate_pending: "Certificat en attente",
+        covid_disclaimer: "En raison de la pandémie de COVID-19, le ministère de l'Éducation nationale a autorisé les élèves à supprimer leurs notes du 2e semestre.",
+        pending_desc: "Les résultats ont été officiellement publiés, mais le certificat n'est pas encore arrivé.",
+        view: "Afficher",
+        school_champion: "Champion d'école",
+        grade_champion: "Champion de promotion",
+        intl_honor_roll: "Liste d'honneur int'l",
+        participation: "Participation",
+        silver: "Médaillé d'argent",
     }
 };
 
@@ -172,5 +196,36 @@ document.querySelectorAll('.section-title').forEach(function(sectionTitle) {
 
         // Toggle chevron rotation
         chevron.classList.toggle('rotate');
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const tooltip = document.querySelector('.tooltip');
+    const tooltipText = tooltip.querySelector('.tooltip-text');
+
+    tooltip.addEventListener('mouseenter', function() {
+        const rect = tooltipText.getBoundingClientRect();
+        const overflowRight = rect.right > window.innerWidth;
+        const overflowLeft = rect.left < 0;
+
+        if (overflowRight) {
+            tooltipText.style.left = 'auto';
+            tooltipText.style.right = '0';
+            tooltipText.style.transform = 'none';
+        } else if (overflowLeft) {
+            tooltipText.style.left = '0';
+            tooltipText.style.right = 'auto';
+            tooltipText.style.transform = 'none';
+        } else {
+            tooltipText.style.left = '50%';
+            tooltipText.style.right = 'auto';
+            tooltipText.style.transform = 'translateX(-50%)';
+        }
+    });
+
+    tooltip.addEventListener('mouseleave', function() {
+        tooltipText.style.left = '50%';
+        tooltipText.style.right = 'auto';
+        tooltipText.style.transform = 'translateX(-50%)';
     });
 });
