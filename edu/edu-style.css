@@ -2,12 +2,15 @@
     --primary-blue: #3b5ae4;
     --secondary-blue: #cbd3ff;
     --tertiary-blue: #f3f5ff;
-    --primary-yellow: #f2e181;
+    --primary-yellow: #9e8b1c;
     --secondary-yellow: #fff9d9;
     --tertiary-yellow: #fffdf2;
     --primary-red: #be3030;
     --secondary-red: #fce9e9;
     --tertiary-red: #fff3f3;
+    --primary-purple: #6f3ff5;
+    --secondary-purple: #e6e3ff;
+    --tertiary-purple: #f7f6ff;
     --secondary-text: #545660;
     --background: #ffffff;
 }
@@ -37,6 +40,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     margin: 24px;
+    overflow-y: scroll;
 }
 
 .content-wrapper {
@@ -52,8 +56,8 @@ a {
 
 hr {
     border: 0;
-    border-top: 2px solid var(--secondary-blue);
-    margin: 16px 8px 16px 0;
+    border-top: 1px solid var(--secondary-blue);
+    margin: 16px 8px 8px 0;
 }
 
 .tooltip {
@@ -230,46 +234,53 @@ hr {
 
 .lang-level {
     font-size: 18px;
-    margin: 0 0 28px 0;
+    margin: -8px 0 28px 0;
     font-weight: 600;
 }
 
 #lang-tr {
-    background-image: url(../img/tr.png);
+    background:
+        linear-gradient(rgba(243, 245, 255, 0.2), rgba(243, 245, 255, 0.2)),
+        url(../img/tr.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #lang-de {
     background:
-        linear-gradient(to right, #000000 0%, #000000 100%),
-        linear-gradient(to right, #FF0000 0%, #FF0000 100%),
-        linear-gradient(to right, #FFCC00 0%, #FFCC00 100%);
+        linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%),
+        linear-gradient(to right, rgba(255, 0, 0, 0.8) 0%, rgba(255, 0, 0, 0.8) 100%),
+        linear-gradient(to right, rgba(255, 204, 0, 0.8) 0%, rgba(255, 204, 0, 0.8) 100%),
+        var(--tertiary-blue);
     background-size: 100% 33.5%;
     background-repeat: no-repeat;
     background-position: top, center, bottom;
 }
 
 #lang-en {
-    background-image: url(../img/eng.png);
+    background:
+        linear-gradient(rgba(243, 245, 255, 0.2), rgba(243, 245, 255, 0.2)),
+        url(../img/eng.png);
     background-size: cover;
     background-position: center;
-
     background-repeat: no-repeat;
 }
 
 #lang-fr {
     background:
-        linear-gradient(to bottom, #002551 0%, #002551 100%),
-        linear-gradient(to bottom, #ffffff 0%, #ffffff 100%),
-        linear-gradient(to bottom, #c81025 0%, #c81025 100%);
+        linear-gradient(to bottom, rgba(0, 37, 81, 0.8) 0%, rgba(0, 37, 81, 0.8) 100%),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%),
+        linear-gradient(to bottom, rgba(200, 16, 37, 0.8) 0%, rgba(200, 16, 37, 0.8) 100%),
+        var(--tertiary-blue);
     background-size: 33.5% 100%;
     background-repeat: no-repeat;
     background-position: left, center, right;
 }
 
 #lang-latin {
-    background-image: url(../img/latin.jpg);
+    background:
+        linear-gradient(rgba(243, 245, 255, 0.2), rgba(243, 245, 255, 0.2)),
+        url(../img/latin.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -277,8 +288,8 @@ hr {
 
 .lang-card-filler {
     background-color: transparent;
-    padding: 12px;
-    width: 300px !important;
+    padding: 0;
+    width: 324px !important;
     flex-grow: 1;
 }
 
@@ -302,6 +313,165 @@ hr {
 
 /*#endregion Languages*/
 
+
+/*#region Experience*/
+.internship-card,
+.experience-card {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    margin-bottom: 16px;
+    margin: 0 8px 8px 0;
+    flex-grow: 1;
+}
+
+.internship-card {
+    width: 360px !important;
+}
+
+.experience-card {
+    width: 480px !important;
+}
+
+.internship-card-filler {
+    background-color: transparent;
+    padding: 0;
+    width: 384px !important;
+    flex-grow: 1;
+}
+
+.experience-card-filler {
+    background-color: transparent;
+    padding: 0;
+    width: 504px !important;
+    flex-grow: 1;
+}
+
+.internship-card-primary,
+.experience-card-primary {
+    background-color: var(--secondary-yellow);
+    border-left: 4px solid var(--primary-yellow);
+    padding-left: 8px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.internship-card-primary {
+    background-color: var(--secondary-yellow);
+    border-left: 4px solid var(--primary-yellow);
+    height: 60px;
+}
+
+.experience-card-primary {
+    background-color: var(--secondary-purple);
+    border-left: 4px solid var(--primary-purple);
+    min-height: 60px;
+    max-height: 160px;
+    padding: 8px;
+}
+
+.experience-card-primary img,
+.internship-card-primary img{
+    height: 40px;
+    margin-right: 8px;
+}
+
+.experience-info,
+.internship-info {
+    margin-left: 8px;
+    padding-left: 12px;
+    height: calc(100% - 12px);
+}
+
+.experience-info {
+    border-left: 2px solid var(--primary-purple);
+}
+
+.internship-info {
+    border-left: 2px solid var(--primary-yellow);
+}
+
+.experience-info h3,
+.internship-info h3 {
+    margin: 0;
+    margin-top: -4px;
+    font-size: 24px;
+}
+
+.experience-info h3 {
+    color: var(--primary-purple);
+    margin-top: 4px;
+}
+
+.internship-info h3 {
+    color: var(--primary-yellow);
+}
+
+.experience-info p,
+.internship-info p {
+    margin: 0;
+    margin-top: -8px;
+    padding: 4px 0 8px 0;
+    font-size: 14px;
+    color: var(--secondary-text);
+}
+
+.experience-tags-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 4px;
+    margin: 4px -4px;
+}
+
+.experience-tag,
+.internship-tag {
+    padding: 4px 8px;
+    font-size: 14px;
+    width: fit-content;
+    text-align: center;
+    border-radius: 4px;
+    margin: 4px;
+    flex-grow: 1;
+}
+
+.experience-tag {
+    background-color: var(--tertiary-purple);
+    border: 1px dashed var(--primary-purple);
+    color: var(--primary-purple);
+}
+
+.internship-tag {
+    background-color: var(--tertiary-yellow);
+    border: 1px dashed var(--primary-yellow);
+    color: var(--primary-yellow);
+}
+
+.experience-tag i,
+.internship-tag i {
+    margin-right: 6px;
+}
+
+.experience-desc,
+.internship-desc {
+    padding: 8px;
+    font-size: 14px;
+    color: var(--secondary-text);
+    margin: 0;
+    text-align: justify;
+}
+
+.experience-desc {
+    background-color: var(--tertiary-purple);
+}
+
+.internship-desc {
+    background-color: var(--tertiary-yellow);
+}
+/*#endregion Experience*/
 
 /*#region Test Results*/
 .cards-container {
@@ -337,8 +507,8 @@ hr {
 
 .test-card-filler {
     background-color: transparent;
-    padding: 12px;
-    width: 360px !important;
+    padding: 0;
+    width: 384px !important;
     flex-grow: 1;
 }
 
@@ -473,7 +643,7 @@ hr {
 }
 
 
-/*#endsregion Test Results*/
+/*#endregion Test Results*/
 
 /*#region Competitions*/
 .competition-card {
@@ -490,8 +660,8 @@ hr {
 
 .competition-card-filler {
     background-color: transparent;
-    padding: 12px;
-    width: 480px !important;
+    padding: 0;
+    width: 504px !important;
     flex-grow: 1;
 }
 
@@ -659,6 +829,11 @@ hr {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
+    }
+
+    #language-selector {
+        margin-top: 0;
+        margin-bottom: 24px;
     }
 
     #greeting {
