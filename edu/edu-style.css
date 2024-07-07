@@ -1,3 +1,4 @@
+/*#region General*/
 :root {
     --primary-blue: #3b5ae4;
     --secondary-blue: #cbd3ff;
@@ -60,11 +61,16 @@ hr {
     margin: 16px 8px 8px 0;
 }
 
+.spacing-30 {
+    margin-bottom: 30px;
+}
+
 .tooltip {
     border-bottom: 1px dotted;
     position: relative;
     display: inline-block;
     cursor: help;
+    z-index: 30;
 }
 
 .black-dotted-tooltip {
@@ -90,7 +96,7 @@ hr {
     transform: translateX(-50%);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border: 1px dotted var(--secondary-blue);
-    opacity: 0.8;
+    opacity: 1 !important;
 }
 
 .tooltip .tooltip-text::after {
@@ -115,6 +121,10 @@ hr {
     font-weight: 600;
     cursor: pointer;
 }
+
+/*#endregion General*/
+
+/*#region Info*/
 
 .info {
     background-color: #fff;
@@ -195,6 +205,7 @@ hr {
     margin-right: 8px;
     margin-top: 24px;
 }
+/*#endregion Info*/
 
 /*#region Languages*/
 .lang-card {
@@ -202,88 +213,41 @@ hr {
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 8px;
-    margin-bottom: 16px;
     width: 300px !important;
-    margin: 0 8px 8px 0;
+    height: 64px;
     flex-grow: 1;
-}
-
-.lang-card-primary {
-    max-height: 100px;
-    border-radius: 4px;
+    margin: 0 8px 8px 0;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    color: white;
-
 }
 
-.lang-card-primary span {
-    text-shadow: 0 0 4px rgba(0, 0, 0, 1);
-    /*-webkit-text-stroke: 1px black;*/
-    width: 100%;
-    align-items: center;
-    text-align: center;
+.lang-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8px;
 }
 
 .lang-name {
-    font-size: 36px;
-    margin: 24px 0 0 0;
+    font-size: 28px;
+    margin: 0;
     font-weight: 600;
+    display: flex;
+    flex-direction: row;
+}
+
+.lang-card img {
+    width: 80px;
+    height: 64px;
+    object-fit: cover;
+    margin-right: 8px;
+    border-radius: 4px;
 }
 
 .lang-level {
-    font-size: 18px;
+    font-size: 16px;
     margin: -8px 0 28px 0;
-    font-weight: 600;
-}
-
-#lang-tr {
-    background:
-        linear-gradient(rgba(243, 245, 255, 0.2), rgba(243, 245, 255, 0.2)),
-        url(../img/tr.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#lang-de {
-    background:
-        linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%),
-        linear-gradient(to right, rgba(255, 0, 0, 0.8) 0%, rgba(255, 0, 0, 0.8) 100%),
-        linear-gradient(to right, rgba(255, 204, 0, 0.8) 0%, rgba(255, 204, 0, 0.8) 100%),
-        var(--tertiary-blue);
-    background-size: 100% 33.5%;
-    background-repeat: no-repeat;
-    background-position: top, center, bottom;
-}
-
-#lang-en {
-    background:
-        linear-gradient(rgba(243, 245, 255, 0.2), rgba(243, 245, 255, 0.2)),
-        url(../img/eng.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#lang-fr {
-    background:
-        linear-gradient(to bottom, rgba(0, 37, 81, 0.8) 0%, rgba(0, 37, 81, 0.8) 100%),
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%),
-        linear-gradient(to bottom, rgba(200, 16, 37, 0.8) 0%, rgba(200, 16, 37, 0.8) 100%),
-        var(--tertiary-blue);
-    background-size: 33.5% 100%;
-    background-repeat: no-repeat;
-    background-position: left, center, right;
-}
-
-#lang-latin {
-    background:
-        linear-gradient(rgba(243, 245, 255, 0.2), rgba(243, 245, 255, 0.2)),
-        url(../img/latin.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    font-weight: 400;
+    width: fit-content;
 }
 
 .lang-card-filler {
@@ -293,30 +257,101 @@ hr {
     flex-grow: 1;
 }
 
-/* #lang-en {
-    background:
-        linear-gradient(to right, #c8102e 40%, var(--tertiary-blue) 100%),
-
-        linear-gradient(to right, #ffffff 40%, var(--tertiary-blue) 100%),
-        linear-gradient(to right, #012169 40%, var(--tertiary-blue) 100%),
-        linear-gradient(to right, #ffffff 40%, var(--tertiary-blue) 100%),
-        linear-gradient(to right, #c8102e 40%, var(--tertiary-blue) 100%),
-        linear-gradient(to right, #ffffff 40%, var(--tertiary-blue) 100%),
-        linear-gradient(to right, #012169 40%, var(--tertiary-blue) 100%),
-        linear-gradient(to right, #ffffff 40%, var(--tertiary-blue) 100%),
-        linear-gradient(to right, #c8102e 40%, var(--tertiary-blue) 100%);
-
-    background-size: 100% 5px, 100% 8px, 100% 20px, 100% 7px, 100% 20px, 100% 7px, 100% 20px, 100% 5px, 100% 8px;
-    background-repeat: no-repeat;
-    background-position: 0 0px, 0 5px, 0 13px, 0 33px, 0 40px, 0 60px, 0 67px, 0 87px, 0 92px;
-} */
-
 /*#endregion Languages*/
 
+/*#region Education*/
+.school-card,
+.course-card {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    flex-grow: 1;
+    margin: 0 8px 8px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.school-card {
+    width: 640px !important;
+}
+
+.course-card {
+    width: 420px !important;
+}
+
+.school-card-primary,
+.course-card-primary {
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 12px);
+    height: 60px;
+    padding: 8px 0 0 8px;
+}
+
+.school-card-primary {
+    background-color: var(--secondary-yellow);
+    border-left: 4px solid var(--primary-yellow);
+}
+
+.course-card-primary {
+    background-color: var(--secondary-purple);
+    border-left: 4px solid var(--primary-purple);
+}
+
+.school-card-primary h3 {
+    color: var(--primary-yellow);
+}
+
+.course-card-primary h3 {
+    color: var(--primary-purple);
+}
+
+.school-card-primary img,
+.course-card-primary img {
+    height: 52px;
+    margin: 0 8px 8px 0;
+}
+
+.education-type {
+    font-size: 16px;
+    color: var(--secondary-text);
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.education-name {
+    font-size: 24px;
+    margin: 0 0 6px 0;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+}
+
+.school-card-filler {
+    background-color: transparent;
+    padding: 0;
+    width: 664px !important;
+    flex-grow: 1;
+}
+
+.course-card-filler {
+    background-color: transparent;
+    padding: 0;
+    width: 444px !important;
+    flex-grow: 1;
+}
+
+/*#endregion Education*/
 
 /*#region Experience*/
 .internship-card,
-.experience-card {
+.experience-card,
+.student-card {
     background-color: #fff;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -326,32 +361,35 @@ hr {
     flex-grow: 1;
 }
 
-.internship-card {
-    width: 360px !important;
+.internship-card,
+.student-card {
+    width: 480px;
 }
 
 .experience-card {
-    width: 480px !important;
+    width: 720px;
 }
 
-.internship-card-filler {
+.internship-card-filler,
+.experience-card-filler,
+.student-card-filler {
     background-color: transparent;
     padding: 0;
-    width: 384px !important;
     flex-grow: 1;
 }
 
 .experience-card-filler {
-    background-color: transparent;
-    padding: 0;
+    width: 744px !important;
+}
+
+.internship-card-filler,
+.student-card-filler {
     width: 504px !important;
-    flex-grow: 1;
 }
 
 .internship-card-primary,
-.experience-card-primary {
-    background-color: var(--secondary-yellow);
-    border-left: 4px solid var(--primary-yellow);
+.experience-card-primary,
+.student-card-primary {
     padding-left: 8px;
     border-radius: 4px;
     display: flex;
@@ -373,14 +411,22 @@ hr {
     padding: 8px;
 }
 
+.student-card-primary {
+    background-color: var(--secondary-blue);
+    border-left: 4px solid var(--primary-blue);
+    height: 60px;
+}
+
 .experience-card-primary img,
-.internship-card-primary img{
+.internship-card-primary img,
+.student-card-primary img {
     height: 40px;
     margin-right: 8px;
 }
 
 .experience-info,
-.internship-info {
+.internship-info,
+.student-info {
     margin-left: 8px;
     padding-left: 12px;
     height: calc(100% - 12px);
@@ -394,8 +440,13 @@ hr {
     border-left: 2px solid var(--primary-yellow);
 }
 
+.student-info {
+    border-left: 2px solid var(--primary-blue);
+}
+
 .experience-info h3,
-.internship-info h3 {
+.internship-info h3,
+.student-info h3 {
     margin: 0;
     margin-top: -4px;
     font-size: 24px;
@@ -410,8 +461,13 @@ hr {
     color: var(--primary-yellow);
 }
 
+.student-info h3 {
+    color: var(--primary-blue);
+}
+
 .experience-info p,
-.internship-info p {
+.internship-info p,
+.student-info p {
     margin: 0;
     margin-top: -8px;
     padding: 4px 0 8px 0;
@@ -428,14 +484,14 @@ hr {
 }
 
 .experience-tag,
-.internship-tag {
+.internship-tag,
+.student-tag {
     padding: 4px 8px;
     font-size: 14px;
     width: fit-content;
     text-align: center;
     border-radius: 4px;
     margin: 4px;
-    flex-grow: 1;
 }
 
 .experience-tag {
@@ -450,13 +506,21 @@ hr {
     color: var(--primary-yellow);
 }
 
+.student-tag {
+    background-color: var(--tertiary-blue);
+    border: 1px dashed var(--primary-blue);
+    color: var(--primary-blue);
+}
+
 .experience-tag i,
-.internship-tag i {
+.internship-tag i,
+.student-tag i {
     margin-right: 6px;
 }
 
 .experience-desc,
-.internship-desc {
+.internship-desc,
+.student-desc {
     padding: 8px;
     font-size: 14px;
     color: var(--secondary-text);
@@ -471,6 +535,10 @@ hr {
 .internship-desc {
     background-color: var(--tertiary-yellow);
 }
+
+.student-desc {
+    background-color: var(--tertiary-blue);
+}
 /*#endregion Experience*/
 
 /*#region Test Results*/
@@ -478,10 +546,13 @@ hr {
     display: none;
 }
 
-.cards-container.active {
+.cards-container.active,
+.cards-container-inner {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .chevron {
@@ -611,7 +682,7 @@ hr {
 .certificate-pending {
     display: flex;
     flex-direction: row;
-    margin: 6px;
+    margin: 6px 6px 0 6px;
     opacity: 0.8;
     justify-content: center;
     width: fit-content;
