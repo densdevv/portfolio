@@ -304,7 +304,7 @@ a {
 }
 
 .game-project h3 {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
     font-weight: 600;
     color: white;
@@ -322,11 +322,80 @@ a {
 }
 
 .web-project h3 {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
     font-weight: 600;
     color: white;
 }
+
+.cv-button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.cv-button {
+    position: relative;
+    display: flex;
+    font-weight: 600;
+    font-size: 40px !important;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: calc(50% - 50px);
+}
+
+.cv-button p {
+    margin: 0;
+    position: relative;
+    font-size: 40px !important;
+    color: #fff;
+}
+
+.cv-button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--orange);
+    height: 2px;
+    transition: 0.3s ease-out;
+}
+
+.cv-button p::before {
+    position: absolute;
+    content: "CV";
+    width: 0%;
+    inset: 0;
+    color: var(--orange);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+}
+
+.cv-button:hover::after {
+    width: 100%;
+}
+
+.cv-button:hover p::before {
+    width: 100%;
+}
+
+.cv-button i {
+    color: #fff;
+    transition: 0.2s;
+    position: relative;
+    transition-delay: 0.1s;
+}
+
+.cv-button:hover i {
+    transform: translateX(4px);
+    color: var(--orange);
+}
+
+
 
 #dropout {
     background-image:
