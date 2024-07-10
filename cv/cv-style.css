@@ -831,8 +831,8 @@ hr {
     position: relative;
     float: flex-end;
     background-color: var(--secondary-blue);
-    margin: 32px -24px -24px -24px !important;
     padding: 16px;
+    margin: 32px -24px -24px -24px;
 }
 
 .radio-inputs {
@@ -926,9 +926,12 @@ hr {
     }
 
     #greeting h1,
-    #greeting h2,
-    .footer {
+    #greeting h2 {
         margin-right: 10px;
+    }
+
+    .footer {
+        margin: 32px -2px -24px -8px;
     }
 
     .info {
