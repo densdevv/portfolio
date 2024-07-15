@@ -14,6 +14,7 @@
     --tertiary-purple: #f7f6ff;
     --secondary-text: #545660;
     --background: #ffffff;
+    --standard-box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
 }
 
 ::-webkit-scrollbar {
@@ -98,7 +99,7 @@ h3 {
     top: 150%;
     left: 50%;
     transform: translateX(-50%);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--standard-box-shadow);
     border: 1px dotted var(--secondary-blue);
     opacity: 1 !important;
 }
@@ -140,7 +141,7 @@ h3 {
 
 .info {
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--standard-box-shadow);
     border-radius: 4px;
     padding: 4px;
     border-left: 4px solid var(--primary-blue);
@@ -180,7 +181,7 @@ h3 {
 
 .disclaimer {
     background-color: rgb(252, 233, 233);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--standard-box-shadow);
     border-radius: 4px;
     padding: 8px;
     border-left: 4px solid rgb(190, 48, 48);
@@ -224,7 +225,7 @@ h3 {
 .lang-card {
     background-color: #fff;
     border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--standard-box-shadow);
     padding: 8px;
     width: 300px !important;
     height: 64px;
@@ -277,7 +278,7 @@ h3 {
 .course-card {
     background-color: #fff;
     border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--standard-box-shadow);
     padding: 8px;
     flex-grow: 1;
     margin: 0 8px 8px 0;
@@ -366,7 +367,7 @@ h3 {
 .student-card {
     background-color: #fff;
     border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--standard-box-shadow);
     padding: 8px;
     margin-bottom: 16px;
     margin: 0 8px 8px 0;
@@ -412,7 +413,7 @@ h3 {
 .internship-card-primary {
     background-color: var(--secondary-yellow);
     border-left: 4px solid var(--primary-yellow);
-    height: 60px;
+    height: 64px;
 }
 
 .experience-card-primary {
@@ -426,14 +427,14 @@ h3 {
 .student-card-primary {
     background-color: var(--secondary-blue);
     border-left: 4px solid var(--primary-blue);
-    height: 60px;
+    height: 64px;
 }
 
 .experience-card-primary img,
 .internship-card-primary img,
 .student-card-primary img {
     height: 40px;
-    margin-right: 8px;
+    margin: 0 8px;
 }
 
 .experience-info,
@@ -557,6 +558,7 @@ h3 {
 /*#region Test Results*/
 .cards-container {
     display: none;
+    padding: 10px;
 }
 
 .cards-container.active,
@@ -566,6 +568,7 @@ h3 {
     flex-wrap: wrap;
     overflow-x: hidden;
     overflow-y: hidden;
+    
 }
 
 .chevron {
@@ -581,7 +584,7 @@ h3 {
 .test-card {
     background-color: #fff;
     border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--standard-box-shadow);
     padding: 8px;
     margin-bottom: 16px;
     width: 360px !important;
@@ -609,14 +612,15 @@ h3 {
 
 .test-info h3 {
     margin: 0;
-    padding-top: 4px;
+    padding-top: 8px;
     font-size: 24px;
     color: var(--primary-blue);
 }
 
 .test-info p {
     margin: 0;
-    padding: 4px 0 8px 0;
+    padding: -4px 0 8px 0;
+    margin-bottom: 8px;
     font-size: 14px;
     color: var(--secondary-text);
 }
@@ -695,7 +699,7 @@ h3 {
 .certificate-pending {
     display: flex;
     flex-direction: row;
-    margin: 6px 6px 0 6px;
+    margin: 6px;
     opacity: 0.8;
     justify-content: center;
     width: fit-content;
@@ -732,7 +736,7 @@ h3 {
 .competition-card {
     background-color: #fff;
     border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--standard-box-shadow);
     padding: 8px;
     margin-bottom: 16px;
     width: 480px !important;
@@ -761,7 +765,7 @@ h3 {
 
 .competition-info h3 {
     margin: 0;
-    padding-top: 4px;
+    padding-top: 8px;
     font-size: 24px;
     color: var(--primary-red);
 }
@@ -847,7 +851,7 @@ h3 {
     border-radius: 4px;
     background-color: #fff;
     box-sizing: border-box;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--standard-box-shadow);
     padding-right: 4px;
     width: 360px;
     font-size: 14px;
@@ -953,5 +957,9 @@ h3 {
     .section-title,
     .test-info h3 {
         font-size: 20px;
+    }
+
+    .lang-name {
+        padding-top: 4px;
     }
 }
