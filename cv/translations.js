@@ -73,11 +73,11 @@ const translations = {
         project_manager: "Project Manager",
         game: "Game Development",
         dropout_desc_1: "Pursuing a career in game development, I decided to found a indie game studio with my friend, where I worked on a variety of little games for around 2 years. Although these being amateur projects, two of them were published, which gave me an understanding of every step in a mobile game's production pipeline.",
-        dropout_desc_2: "I was in charge of the project management of a large-scale undisclosed PC title and a mobile commission project, whilst simultaneously helping out and overseeing the game development activities across projects studio-wide. <br> → Resigned from position to focus on academic studies and personal stuff.",
+        dropout_desc_2: "I was in charge of the project management of a rather large-scale undisclosed PC title and a mobile commission project, whilst simultaneously helping out and overseeing the game development activities across projects studio-wide. <br> → Resigned from position to focus on academic studies and personal stuff.",
         koda_desc: "Kod-A Bilisim has been developing document-based technologies and providing solutions since 2006. Working as an intern, I had the opportunity to familiarize myself with various data management systems and software development processes.",
         fibabanka_desc: "As one of the leading banks in terms of digital banking services, working here gave me a general understanding of the fintech industry, and the limitless possibilities of technology's implementations in different sectors.",
         fmss_desc: "FMSS Bilişim Teknolojileri is a software company that provides outsourcing services in the fields of e-commerce and app development, as well as developing in-house projects. I had the chance to learn about the software development processes in a professional environment.",
-        gunce_desc: "İstanbul Günceleri is a student newspaper initiative that aims to provide a platform for students. I redesigned all social media content, and continue to manage the social media accounts, actively posts and Reels. Take a look at the <a href='https://instagram.com/istanbulgunceleri' target='_blank'>Instagram account.</a>",
+        gunce_desc: "İstanbul Günceleri is a student newspaper initiative that aims to provide a platform for students. I redesigned all social media content, and continue to manage the social media accounts, actively posts and Reels.",
         mfinue_desc: "For the fourteenth edition of the Francophone Model United Nations of Eurasia, I participated as an IT team member, contributing to the technical infrastructure of the conference including the website and MFINUE Connect portal.",
         social_media: "Social Media",
         graphic: "Graphic Design",
@@ -98,7 +98,7 @@ const translations = {
         stem: "STEM Project",
         mavidokunus_desc: "The project aims to prevent disabled accesible parking spot abuse, by scanning the license plate using machine learning powered text recognition and issuing fines to the violators.",
         website: "Website",
-        dropout_web_desc: "I designed and developed the official website for Dropout Code, the indie games studio I've co-founded and worked at until recently.",  
+        dropout_web_desc: "I designed and developed the official website for Dropout Code, the indie games studio I've co-founded and worked at until recently.",
         eau: "Water, It's Life!",
         chemistry_project: "Chemistry Project",
         chemistry: "Chemistry",
@@ -180,11 +180,11 @@ const translations = {
         project_manager: "Proje Yöneticisi",
         game: "Oyun Geliştirme",
         dropout_desc_1: "Oyun geliştirme kariyerine yönelik olarak, bir arkadaşımla birlikte bağımsız bir oyun stüdyosu kurmaya karar verdim ve yaklaşık 2 yıl boyunca çeşitli küçük oyunlar üzerinde çalıştım. Amatör projeler olmalarına rağmen, bunlardan ikisi yayınlandı ve bu da beni bir mobil oyunun üretim sürecindeki her adımı kavramamı sağladı.",
-        dropout_desc_2: "Büyük çaplı, duyurulmamış bir bilgisayar oyununun ve bir mobil oyunun proje yönetimini üstlendim. Ayrıca stüdyo çapındaki oyun geliştirme süreçlerini yönettim. <br> → Bu pozisyondan, eğitim ve kişisel hayatıma odaklanmak için çekildim.",
+        dropout_desc_2: "Görece büyük çaplı, duyurulmamış bir bilgisayar oyununun ve bir mobil oyunun proje yönetimini üstlendim. Ayrıca stüdyo çapındaki oyun geliştirme süreçlerini yönettim. <br> → Bu pozisyondan, eğitim ve kişisel hayatıma odaklanmak için çekildim.",
         koda_desc: "Kod-A Bilişim, 2006 yılından beri belge tabanlı teknoloji çözümleri sunmaktadır. Stajyer olarak çalışırken çeşitli veri yönetim sistemleri ve yazılım geliştirme süreçlerini tanıma fırsatı buldum.",
         fibabanka_desc: "Dijital bankacılık hizmetleri açısından önde gelen bankalardan biri olan Fibabanka'da çalışmak, fintech sektörü hakkında genel bir anlayış kazanmama ve teknolojinin farklı sektörlerdeki uygulamalarının sınırsız olasılıklarını görmeme olanak tanıdı.",
         fmss_desc: "FMSS Bilişim Teknolojileri, e-ticaret ve uygulama geliştirme alanlarında dış kaynak hizmetleri sunan ve aynı zamanda kendi projelerini geliştiren bir yazılım şirketidir. Burada, profesyonel bir ortamda yazılım geliştirme süreçlerini öğrenme şansı buldum.",
-        gunce_desc: "İstanbul Günceleri, öğrencilere buluşma noktası sağlamayı amaçlayan bir öğrenci gazetesidir. Tüm sosyal medya içeriklerini yeniden tasarladım ve sosyal medya hesaplarını yönetmeye devam ediyorum, aktif olarak gönderi ve Reels paylaşıyorum. <a href='https://instagram.com/istanbulgunceleri' target='_blank'>Instagram hesabına</a>  göz atın.",
+        gunce_desc: "İstanbul Günceleri, öğrencilere buluşma noktası sağlamayı amaçlayan bir öğrenci gazetesidir. Tüm sosyal medya içeriklerini yeniden tasarladım ve sosyal medya hesaplarını yönetmeye devam ediyorum, aktif olarak gönderi ve Reels paylaşıyorum.",
         mfinue_desc: "Avrasya Frankofon Model Birleşmiş Milletler'in on dördüncü edisyonu için IT ekibinde yer alarak, konferansın teknik altyapısına, web sitesi ve MFINUE Connect portalı dahil olmak üzere katkıda bulundum.",
         social_media: "Sosyal Medya",
         graphic: "Grafik Tasarım",
@@ -211,7 +211,7 @@ const translations = {
         chemistry: "Kimya",
         environment: "Çevre",
         research: "Araştırma",
-        eau_desc: "10. sınıf yıllık projem olarak; su, önemi ve kirliliğinin çevreye olan etkileriyle ilgili geniş bir konu yelpazesinde araştırma yaptım. Bulgularımı bir web sitesi şeklinde sundum. Proje, tam notla değerlendirildi.",    
+        eau_desc: "10. sınıf yıllık projem olarak; su, önemi ve kirliliğinin çevreye olan etkileriyle ilgili geniş bir konu yelpazesinde araştırma yaptım. Bulgularımı bir web sitesi şeklinde sundum. Proje, tam notla değerlendirildi.",
         created_by: "Deniz Hönigs SJ'25 tarafından 🩵 ile tasarlandı ve geliştirildi",
     },
     "fr": {
@@ -287,11 +287,11 @@ const translations = {
         project_manager: "Chef des projets",
         game: "Développement de jeux",
         dropout_desc_1: "Poursuivant une carrière dans le développement de jeux, j'ai décidé de fonder un studio de jeux indépendant avec mon ami, où j'ai travaillé sur une variété de petits jeux pendant environ 2 ans. Bien que ces projets soient amateurs, deux d'entre eux ont été publiés, ce qui m'a permis de comprendre chaque étape du processus de production d'un jeu mobile.",
-        dropout_desc_2: "J'étais chargé de la gestion de projet d'un titre PC à grande échelle non divulgué et d'un projet de commande mobile, tout en aidant et en supervisant les activités de développement de jeux dans le cadre de projets à l'échelle du studio. <br> → J'ai démissionné de mon poste pour me concentrer sur mes études universitaires et mes affaires personnelles.",
+        dropout_desc_2: "J'étais chargé de la gestion de projet d'un titre PC à échelle relativement grande non divulgué et d'un projet de commande mobile, tout en aidant et en supervisant les activités de développement de jeux dans le cadre de projets à l'échelle du studio. <br> → J'ai démissionné de mon poste pour me concentrer sur mes études universitaires et mes affaires personnelles.",
         koda_desc: "Kod-A Bilisim développe des technologies basées sur des documents et fournit des solutions depuis 2006. En tant que stagiaire, j'ai eu l'occasion de me familiariser avec divers systèmes de gestion de données et processus de développement de logiciels.",
         fibabanka_desc: "En tant que l'une des principales banques en termes de services bancaires numériques, travailler ici m'a donné une compréhension générale de l'industrie fintech et des possibilités illimitées des implémentations technologiques dans différents secteurs.",
         fmss_desc: "FMSS Bilişim Teknolojileri est une entreprise de logiciels qui fournit des services d'externalisation dans les domaines du commerce électronique et du développement d'application, ainsi que le développement de projets internes. J'ai eu la chance d'apprendre les processus de développement de logiciels dans un environnement professionnel.",
-        gunce_desc: "İstanbul Günceleri est une initiative de journal étudiant qui vise à fournir une plateforme aux étudiants. J'ai re-conçu tout le contenu des réseaux sociaux et continue de gérer les comptes de médias sociaux, de publier activement des posts et des Reels. Jetez un œil au <a href='https://instagram.com/istanbulgunceleri' target='_blank'>compte Instagram.</a>",
+        gunce_desc: "İstanbul Günceleri est une initiative de journal étudiant qui vise à fournir une plateforme aux étudiants. J'ai re-conçu tout le contenu des réseaux sociaux et continue de gérer les comptes de médias sociaux, de publier activement des posts et des Reels.",
         mfinue_desc: "Pour la quatorzième édition du Modèle Francophone des Nations Unies en Eurasie, j'ai participé en tant que membre de l'équipe de TI, contribuant à l'infrastructure technique de la conférence, y compris le site web et le portail MFINUE Connect.",
         social_media: "Réseaux sociaux",
         graphic: "Conception graphique",
@@ -324,7 +324,7 @@ const translations = {
 };
 
 function updateContent(language) {
-    document.querySelectorAll('[data-translate]').forEach(function(element) {
+    document.querySelectorAll('[data-translate]').forEach(function (element) {
         const key = element.getAttribute('data-translate');
         element.innerHTML = translations[language][key];
     });
@@ -340,8 +340,8 @@ function getURLParameter(name) {
     return new URLSearchParams(window.location.search).get(name);
 }
 
-document.querySelectorAll('input[name="language"]').forEach(function(radio) {
-    radio.addEventListener('change', function() {
+document.querySelectorAll('input[name="language"]').forEach(function (radio) {
+    radio.addEventListener('change', function () {
         const selectedLang = this.value;
         updateContent(selectedLang);
         updateURLParameter('lang', selectedLang);
@@ -356,25 +356,29 @@ document.querySelector(`input[name="language"][value="${initialLang}"]`).checked
 updateContent(initialLang);
 updateURLParameter('lang', initialLang);
 
-document.querySelectorAll('.section-title').forEach(function(sectionTitle) {
-    sectionTitle.addEventListener('click', function() {
+document.querySelectorAll('.section-title').forEach(function (sectionTitle) {
+    sectionTitle.addEventListener('click', function () {
         const sectionId = this.getAttribute('data-target');
         const sectionContent = document.getElementById(sectionId);
         const chevron = this.querySelector('.chevron');
 
-        // Toggle active class on section content
+        if (sectionContent.style.maxHeight) {
+            sectionContent.style.maxHeight = null;
+        } else {
+            sectionContent.style.maxHeight = sectionContent.scrollHeight + 'px';
+        }
+
         sectionContent.classList.toggle('active');
 
-        // Toggle chevron rotation
         chevron.classList.toggle('rotate');
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const tooltip = document.querySelector('.tooltip');
     const tooltipText = tooltip.querySelector('.tooltip-text');
 
-    tooltip.addEventListener('mouseenter', function() {
+    tooltip.addEventListener('mouseenter', function () {
         const rect = tooltipText.getBoundingClientRect();
         const overflowRight = rect.right > window.innerWidth;
         const overflowLeft = rect.left < 0;
@@ -394,9 +398,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    tooltip.addEventListener('mouseleave', function() {
+    tooltip.addEventListener('mouseleave', function () {
         tooltipText.style.left = '50%';
         tooltipText.style.right = 'auto';
         tooltipText.style.transform = 'translateX(-50%)';
     });
+});
+
+const sections = document.querySelectorAll('.section-title');
+
+sections.forEach((section, index) => {
+    section.style.setProperty('--index', index);
+    section.style.setProperty('--animation-delay', '0.2s');
 });
