@@ -25,10 +25,13 @@
 
 ::-webkit-scrollbar-track {
     background: var(--secondary-blue);
+    margin: 2px;
 }
 
 ::-webkit-scrollbar-thumb {
     background: var(--primary-blue);
+    border-radius: 4px 0 0 4px;
+    
 }
 
 ::selection {
@@ -163,7 +166,6 @@ h3 {
     justify-content: center !important;
     align-items: center !important;
     flex-direction: row !important;
-    width: 100% !important;
     text-align: center !important;
 }
 
@@ -395,6 +397,13 @@ h3 {
 /*#endregion Education*/
 
 /*#region Experience*/
+.horizontal-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 8px 0 0;
+}
+
 .internship-card,
 .experience-card,
 .student-card {
@@ -587,6 +596,11 @@ h3 {
     background-color: var(--tertiary-blue);
 }
 
+.student-card-secondary {
+    display: flex;
+    flex-direction: column;
+}
+
 /*#endregion Experience*/
 
 /*#region Test Results*/
@@ -737,18 +751,30 @@ h3 {
 .certificate-pending {
     display: flex;
     flex-direction: row;
-    margin: 6px;
+    margin: 4px;
+    margin-bottom: -4px;
     opacity: 0.8;
     justify-content: center;
     width: fit-content;
     align-self: center;
     z-index: 21;
+    text-wrap: nowrap;
+    text-decoration: none;
+}
+
+.view-certificate:hover {
+    opacity: 1;
+    background-color: var(--tertiary-blue);
+    transition: 0.3s ease-in-out;
 }
 
 .view-certificate {
     align-self: center;
     cursor: pointer;
     color: var(--primary-blue);
+    border-radius: 4px;
+    padding: 4px;
+    transition: 0.3s ease-in-out;
 }
 
 .certificate-pending {
@@ -766,8 +792,6 @@ h3 {
     width: 16px;
     margin-right: 4px;
 }
-
-
 /*#endregion Test Results*/
 
 /*#region Competitions*/
@@ -982,7 +1006,8 @@ h3 {
     }
 
     .info-links-container {
-        width: calc(100% - 16px);
+        width: calc(100%);
+        margin-left: 0;
         flex-direction: row;
     }
 
