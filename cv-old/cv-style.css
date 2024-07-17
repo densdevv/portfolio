@@ -46,6 +46,7 @@ body {
     background-repeat: no-repeat;
     margin: 24px;
     overflow-y: scroll;
+    user-select: none;
 }
 
 @keyframes drop-in {
@@ -190,6 +191,7 @@ h3 {
     padding: 4px;
     text-align: justify;
     font-size: 14px;
+    user-select: text;
 }
 
 .info-links-container {
@@ -582,6 +584,7 @@ h3 {
     text-align: justify;
     border-radius: 4px;
     margin-top: 8px;
+    user-select: text;
 }
 
 .experience-desc {
@@ -765,7 +768,7 @@ h3 {
 .view-certificate:hover {
     opacity: 1;
     background-color: var(--tertiary-blue);
-    transition: 0.3s ease-in-out;
+    transition: 0.15s ease-in-out;
 }
 
 .view-certificate {
@@ -774,7 +777,7 @@ h3 {
     color: var(--primary-blue);
     border-radius: 4px;
     padding: 4px;
-    transition: 0.3s ease-in-out;
+    transition: 0.15s ease-in-out;
 }
 
 .certificate-pending {
