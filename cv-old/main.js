@@ -106,7 +106,10 @@ const translations = {
         environment: "Environment",
         research: "Research",
         eau_desc: "As my 10th grade annual project, I conducted research on a vast variety of subjects related to water, its importance, and its polution's effects on the environment. I presented my findings in form of a website. The project was awarded a perfect score.",
-        created_by: "Designed & developed with 🩵 by Deniz Hönigs SJ'25",
+        created_by: "Designed & developed with 🩵 by Deniz Hönigs",
+        web_games: "Web Games",
+        fun: "Fun",
+        dens_desc: "dens.dev is a collection of little websites that I created just for fun. You can check them out by clicking the link below.",
     },
     "tr": {
         greeting: "👋 Merhaba!",
@@ -214,7 +217,10 @@ const translations = {
         environment: "Çevre",
         research: "Araştırma",
         eau_desc: "10. sınıf yıllık projem olarak; su, önemi ve kirliliğinin çevreye olan etkileriyle ilgili geniş bir konu yelpazesinde araştırma yaptım. Bulgularımı bir web sitesi şeklinde sundum. Proje, tam notla değerlendirildi.",
-        created_by: "Deniz Hönigs SJ'25 tarafından 🩵 ile tasarlandı ve geliştirildi",
+        created_by: "Deniz Hönigs tarafından 🩵 ile tasarlandı ve geliştirildi",
+        web_games: "Web Oyunları",
+        fun: "Eğlence",
+        dens_desc: "dens.dev, eğlencesine oluşturduğum küçük web sitelerinin bir koleksiyonudur. Göz atmak için aşağıdaki bağlantıya tıklayabilirsiniz.",
     },
     "fr": {
         greeting: "👋 Bonjour!",
@@ -322,7 +328,10 @@ const translations = {
         environment: "Environnement",
         research: "Recherche",
         eau_desc: "Pour mon projet annuel de 10e année, j'ai mené des recherches sur une grande variété de sujets liés à l'eau, son importance et les effets de sa pollution sur l'environnement. J'ai présenté mes résultats sous forme de site web. Le projet a reçu une note parfaite.",
-        created_by: "Conçu et développé avec 🩵 par Deniz Hönigs SJ'25",
+        created_by: "Conçu et développé avec 🩵 par Deniz Hönigs",
+        web_games: "Jeux Web",
+        fun: "Fun",
+        dens_desc: "dens.dev est une collection de petits sites web que j'ai créés juste pour s'amuser. Vous pouvez les consulter en cliquant sur le lien ci-dessous.",
     }
 };
 
