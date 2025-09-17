@@ -250,3 +250,11 @@ body {
 #quiz {
   background-image: url('/img/quiz.png');
 }
+
+#personality {
+  background-image: url('/img/personality.png');
+}
+
+#bingo {
+  background-image: url('/img/bingo.png');
+}
