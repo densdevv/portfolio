@@ -155,9 +155,10 @@ body {
   background-size: inherit;
   background-position: inherit;
   z-index: 1;
-  filter: blur(2px) brightness(1);
+  filter: blur(2px) brightness(0.5);
   opacity: 0.8;
   transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+
 }
 
 .game-card h2 {
@@ -192,7 +193,7 @@ body {
 }
 
 .game-card:hover::before {
-  filter: blur(10px) brightness(0.6);
+  filter: blur(10px) brightness(0.3);
   opacity: 0.8;
 }
 
@@ -257,4 +258,12 @@ body {
 
 #bingo {
   background-image: url('/img/bingo.png');
+}
+
+#decide {
+  background-image: url('/img/decide.png');
+}
+
+#istanbul {
+  background-image: url('/img/istanbul.png');
 }
